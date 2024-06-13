@@ -67,8 +67,13 @@ function AboutUs() {
                             </Col>
                         </Row>
                         <Row className="small-text">
-                            <Col xs={12}>
-                                <h3 style={{ color: "#E17126", paddingTop: "50px" }}>About Us</h3>
+                            <Col xs={12} style={{
+                                fontSize: '13px',
+                                color: '#762a2b',
+                                left: '50%',
+                                top: '20px',
+                            }}>
+                                <h3 style={{ color: "#E17126", paddingTop: "30px" }}>About Us</h3>
                                 <p style={{ color: "#762A2B" }}>With style, quality and value at its core, Avalon Furniture is well positioned to deliver on the aspirations of discerning consumers. Our tasteful, sophisticated designs, with attention to detail found only above our price point, delivers incomparable value.</p>
                                 <p style={{ color: "#762A2B" }}>Retailers carrying Avalon Furniture do so with value and quality in mind for their consumers. Our products proudly carry a manufacturers warranty to our retailers (see your local Avalon retailer for more details) to ensure satisfaction.</p>
                                 <p style={{ color: "#762A2B" }}>Avalon Furniture sources its products from high quality factories in Southeast Asia and offers its retailers purchasing options by full container; from our well-stocked mixing warehouse in Vietnam; or from our U.S. Warehouse, located in Houston, Texas.</p>

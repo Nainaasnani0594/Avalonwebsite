@@ -54,7 +54,12 @@ function Upholstery() {
                             </Col>
                         </Row>
                         <Row className="small-text">
-                            <Col xs={12}>
+                            <Col xs={12} style={{
+                                fontSize: '13px',
+                                color: '#762a2b',
+                                left: '50%',
+                                top: '20px',
+                            }}>
                                 <h3 style={{ color: "#E17126" }}>Upholstery</h3>
                                 <p>Avalon Upholstery is Houston, Texas based upholstery manufacturer, designing and building upholstery for both residential and commercial market.</p>
                                 <p>Avalon Upholstery is part of the Dickson Furniture and Avalon Furniture family, taking pride in manufacturing high quality product at exceptional value.</p>

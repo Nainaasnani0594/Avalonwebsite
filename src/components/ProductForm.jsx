@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Styles.css'; // Import custom CSS
+import './Styles.css'; 
 import emailjs from 'emailjs-com';
 
 const ProductForm = ({ onSubmit }) => {
@@ -21,14 +21,7 @@ const ProductForm = ({ onSubmit }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     sendEmail(formData);
-    onSubmit(formData); // Callback to parent component if needed
-    // Optionally reset form fields after submission
-    // setFormData({
-    //   name: '',
-    //   email: '',
-    //   phone: '',
-    //   requiredProduct: ''
-    // });
+    onSubmit(formData); 
   };
 
   const sendEmail = (formData) => {

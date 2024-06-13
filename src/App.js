@@ -36,7 +36,7 @@ function App() {
           </div>
           <Header onProductClick={handleProductsClick} />
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/Avalonwebsite" element={<Home />} />
             <Route path="/aboutus" element={<AboutUs />} />
             <Route path="/bedroom" element={<Bedroom />} />
             <Route path="/dining" element={<Dining />} />

@@ -70,6 +70,7 @@ function ContactUs() {
     };
 
     return (
+        <>
         <div className="container">
             <div className="row" style={{ backgroundColor: "#E7E7E7" }}>
                 <h1 style={{ backgroundColor: "#e17126", color: "white", padding: "5px 10px", margin: 0 }}>Contact Us</h1>
@@ -184,6 +185,13 @@ function ContactUs() {
                 </div>
             </div>
         </div>
+        <Container className="my-container-about">
+                <Row className="mb-3 my-row">
+                    <div className='five'></div>
+                </Row>
+            </Container>
+
+        </>
     );
 }
 

@@ -55,7 +55,12 @@ function Bedroom() {
                             </Col>
                         </Row>
                         <Row className="small-text">
-                            <Col xs={12}>
+                            <Col xs={12} style={{
+                                fontSize: '13px',
+                                color: '#762a2b',
+                                left: '50%',
+                                top: '20px',
+                            }}>
                                 <h3 style={{ color: "#E17126" }}>Bedroom</h3>
                                 <p>Our master bedroom line is replete with exciting style, innovation, and function.</p>
                                 <p>Impressive scale and focus on detail is what distinguishes an Avalon bedroom design. Quality materials and craftsmanship, along with natural, yet distinctive color and finish, provide a canvas for the flowing curves and lines of our storage pieces and beds.</p>
