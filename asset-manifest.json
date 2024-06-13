@@ -1,0 +1,42 @@
+{
+  "files": {
+    "main.css": "/Avalonwebsite/static/css/main.af9cf063.css",
+    "main.js": "/Avalonwebsite/static/js/main.2f86151a.js",
+    "static/js/453.ef5affe7.chunk.js": "/Avalonwebsite/static/js/453.ef5affe7.chunk.js",
+    "static/media/B1495.jpg": "/Avalonwebsite/static/media/B1495.ddae28b0e41ea5cfed75.jpg",
+    "static/media/B1209.jpg": "/Avalonwebsite/static/media/B1209.4e811f8f22181f73f2ce.jpg",
+    "static/media/B226.jpg": "/Avalonwebsite/static/media/B226.e3f3bba2bd94aa7e6521.jpg",
+    "static/media/D323.jpg": "/Avalonwebsite/static/media/D323.80b5a1c6dd059b28d4bd.jpg",
+    "static/media/B362.jpg": "/Avalonwebsite/static/media/B362.da05e83ddd5dca700497.jpg",
+    "static/media/B2404.jpg": "/Avalonwebsite/static/media/B2404.fd3e10409921a3a58e07.jpg",
+    "static/media/B518.jpg": "/Avalonwebsite/static/media/B518.787620f2111780ec3894.jpg",
+    "static/media/B566.jpg": "/Avalonwebsite/static/media/B566.b73166c8216fa28cc04a.jpg",
+    "static/media/D118.jpg": "/Avalonwebsite/static/media/D118.d981afa27fd02989bc88.jpg",
+    "static/media/B193.jpg": "/Avalonwebsite/static/media/B193.eb89b37f851ed1678e1d.jpg",
+    "static/media/D511.jpg": "/Avalonwebsite/static/media/D511.fd01083bdc894f77ddd7.jpg",
+    "static/media/B1550.jpg": "/Avalonwebsite/static/media/B1550.cbe13ef344a654bc4dd6.jpg",
+    "static/media/D162.jpg": "/Avalonwebsite/static/media/D162.1a2987d97439b06550d2.jpg",
+    "static/media/u7.jpg": "/Avalonwebsite/static/media/u7.fdce7f340b960daa708a.jpg",
+    "static/media/u4.jpg": "/Avalonwebsite/static/media/u4.93245db2fc6f32fe0bd3.jpg",
+    "static/media/u5.jpg": "/Avalonwebsite/static/media/u5.49870e01874cace57f46.jpg",
+    "static/media/u3.jpg": "/Avalonwebsite/static/media/u3.87791e09fd92c2ff9f9d.jpg",
+    "static/media/B961.jpg": "/Avalonwebsite/static/media/B961.d336f0edf56ab8871a60.jpg",
+    "static/media/D622.jpg": "/Avalonwebsite/static/media/D622.2373e5e7dbedb8fc795d.jpg",
+    "static/media/D526.jpg": "/Avalonwebsite/static/media/D526.06aaec86a92fc3b2cafd.jpg",
+    "static/media/u1.jpg": "/Avalonwebsite/static/media/u1.10027827800a0c3f14fe.jpg",
+    "static/media/10007.jpg": "/Avalonwebsite/static/media/10007.fc51b842b9dca66ab52f.jpg",
+    "static/media/10006.jpg": "/Avalonwebsite/static/media/10006.4879e65b6563d6c3d7d5.jpg",
+    "static/media/10005.jpg": "/Avalonwebsite/static/media/10005.f0e898b2144ce68d348a.jpg",
+    "static/media/10004.jpg": "/Avalonwebsite/static/media/10004.0eb875ac9aa320e34323.jpg",
+    "static/media/10013.jpg": "/Avalonwebsite/static/media/10013.333eadb4a93f5bda89ac.jpg",
+    "static/media/LOGO.png": "/Avalonwebsite/static/media/LOGO.adbf5890de9917d7f26c.png",
+    "index.html": "/Avalonwebsite/index.html",
+    "main.af9cf063.css.map": "/Avalonwebsite/static/css/main.af9cf063.css.map",
+    "main.2f86151a.js.map": "/Avalonwebsite/static/js/main.2f86151a.js.map",
+    "453.ef5affe7.chunk.js.map": "/Avalonwebsite/static/js/453.ef5affe7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.af9cf063.css",
+    "static/js/main.2f86151a.js"
+  ]
+}
