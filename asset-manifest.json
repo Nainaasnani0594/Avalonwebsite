@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Avalonwebsite/static/css/main.af9cf063.css",
-    "main.js": "/Avalonwebsite/static/js/main.f723e43f.js",
+    "main.js": "/Avalonwebsite/static/js/main.5aba358c.js",
     "static/js/453.ef5affe7.chunk.js": "/Avalonwebsite/static/js/453.ef5affe7.chunk.js",
     "static/media/B1495.jpg": "/Avalonwebsite/static/media/B1495.ddae28b0e41ea5cfed75.jpg",
     "static/media/B1209.jpg": "/Avalonwebsite/static/media/B1209.4e811f8f22181f73f2ce.jpg",
@@ -32,11 +32,11 @@
     "static/media/LOGO.png": "/Avalonwebsite/static/media/LOGO.adbf5890de9917d7f26c.png",
     "index.html": "/Avalonwebsite/index.html",
     "main.af9cf063.css.map": "/Avalonwebsite/static/css/main.af9cf063.css.map",
-    "main.f723e43f.js.map": "/Avalonwebsite/static/js/main.f723e43f.js.map",
+    "main.5aba358c.js.map": "/Avalonwebsite/static/js/main.5aba358c.js.map",
     "453.ef5affe7.chunk.js.map": "/Avalonwebsite/static/js/453.ef5affe7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.af9cf063.css",
-    "static/js/main.f723e43f.js"
+    "static/js/main.5aba358c.js"
   ]
 }
