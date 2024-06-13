@@ -22,6 +22,13 @@ const ProductForm = ({ onSubmit }) => {
     e.preventDefault();
     sendEmail(formData);
     onSubmit(formData); // Callback to parent component if needed
+    // Optionally reset form fields after submission
+    // setFormData({
+    //   name: '',
+    //   email: '',
+    //   phone: '',
+    //   requiredProduct: ''
+    // });
   };
 
   const sendEmail = (formData) => {
@@ -46,9 +53,7 @@ const ProductForm = ({ onSubmit }) => {
         <div className="modal-content">
           <div className="modal-header">
             <h5 className="modal-title">Request Product</h5>
-            <button type="button" className="close" onClick={() => onSubmit({})} aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+            {/* Removed close button */}
           </div>
           <div className="modal-body">
             <form onSubmit={handleSubmit}>
