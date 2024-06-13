@@ -1,0 +1,55 @@
+.App {
+  text-align: center;
+}
+
+.outerContainer {
+  overflow: hidden;
+  background-color: #838280;
+  height: 1000px;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.custom-header {
+  height: 30px;
+  display: flex;
+  justify-content: center; /* Aligns the text horizontally */
+  background: #e17126;
+  text-align: center;
+  padding: 5px 0;
+  color: white; /* Sets the text color to white */
+}
+.login-button {
+  position: absolute; /* Position the button absolutely within the App container */
+  top: 25px; /* Adjust the top position */
+  border: none; /* Remove button border */
+  background: white; /* Make background transparent */
+  cursor: pointer; /* Show pointer on hover */
+  display: flex;
+  color: #2e1919; /* Sets the text color to white */
+  font-size: 20;
+  margin-top: 40px;
+
+}
+
+.register-form {
+  position: absolute; /* Position the form absolutely within the App container */
+  top: 50px; /* Adjust the top position to be below the login button */
+  right: 10px; /* Adjust the right position */
+}
+.login-container{
+  height: 20px;
+  display: flex;
+  padding: 5px 0;
+  color: white; /* Sets the text color to white */
+  background: white;
+}
+.navbar-expand {
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  max-width: 978px;
+  margin: 0 auto;
+}

@@ -1,0 +1,56 @@
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .form-group {
+    margin-bottom: 10px;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .locations {
+    margin-top: 30px;
+  }
+  
+  .location {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+  }
+  
+  .recall-notice {
+    color: red;
+    font-weight: bold;
+  }
+  .my-container-about{
+    margin-top: -3px;
+    background-color: white;
+  max-width: 1000px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  
+    }
+    .five{
+      border: 10px solid #dededc;
+    
+    }
+    
