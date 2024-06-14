@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './Styles.css'; 
 import emailjs from 'emailjs-com';
 
-const ProductForm = ({ onSubmit }) => {
+const ProductForm = ({ onSubmit, onClose }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -46,7 +46,9 @@ const ProductForm = ({ onSubmit }) => {
         <div className="modal-content">
           <div className="modal-header">
             <h5 className="modal-title">Request Product</h5>
-            {/* Removed close button */}
+            <button type="button" className="close" onClick={onClose} aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
           </div>
           <div className="modal-body">
             <form onSubmit={handleSubmit}>

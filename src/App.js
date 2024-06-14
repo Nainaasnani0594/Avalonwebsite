@@ -25,6 +25,11 @@ function App() {
     // Handle form submission here, e.g., send data to backend
     console.log(formData);
     setFormSubmitted(true); // Mark form as submitted
+    setShowProductForm(false); // Close the modal after submission
+  };
+
+  const handleCloseForm = () => {
+    setShowProductForm(false); // Function to close the form modal
   };
 
   return (
@@ -42,7 +47,9 @@ function App() {
           </Routes>
         </Router>
       </div>
-      {showProductForm && !formSubmitted && <ProductForm onSubmit={handleFormSubmit} />}
+      {showProductForm && !formSubmitted && (
+        <ProductForm onSubmit={handleFormSubmit} onClose={handleCloseForm} />
+      )}
     </>
   );
 }
