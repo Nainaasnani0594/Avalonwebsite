@@ -115,8 +115,8 @@
 .small-text p {
   padding-right: 30px;
   text-align: justify;
-  font-size: 12px; /* Adjust the font size as needed */
-  line-height: 1.1; /* Adjust the line height for better readability if necessary */
+  font-size: 12px; 
+  line-height: 1; 
 }
 
 .modal {
