@@ -110,6 +110,12 @@ function Home() {
           </Col>
         </Row>
       </Container>
+      <Container className="my-container-about">
+                <Row className="mb-3 my-row">
+                    <div className='five'></div>
+                </Row>
+            </Container>
+
     </>
   );
 }
