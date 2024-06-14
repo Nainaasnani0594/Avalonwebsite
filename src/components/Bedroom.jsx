@@ -49,17 +49,18 @@ function Bedroom() {
                     <Col xs={6}>
                         {/* Content for the second half */}
                         <Row>
-                            <Col xs={12}>
+                            <Col xs={12} className="selected-image-col" style={{marginTop:'2px'}}>
                                 {/* Display the selected image */}
-                                {selectedImage && <Image src={selectedImage} alt="Selected Image" className="img-fluid" style={{ width: '100%', height: "80%" }} />}
+                                {selectedImage && <Image src={selectedImage} alt="Selected Image" className="img-fluid selected-image" />}
                             </Col>
                         </Row>
                         <Row className="small-text">
                             <Col xs={12} style={{
                                 fontSize: '13px',
                                 color: '#762a2b',
+                                marginTop: '-5px',
                                 left: '50%',
-                                top: '20px',
+                                
                             }}>
                                 <h3 style={{ color: "#E17126" }}>Bedroom</h3>
                                 <p>Our master bedroom line is replete with exciting style, innovation, and function.</p>

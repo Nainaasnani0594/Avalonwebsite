@@ -1,3 +1,5 @@
+/* Styles.css */
+
 .navbar {
   background-color: #838280 !important;
 }
@@ -10,88 +12,106 @@
   font-size: 20px;
   margin-left: 20px; /* Adjust as needed for spacing */
 }
-  .login-container {
-    display: flex;
-    justify-content: flex-end; /* Aligns items to the right side */
-    padding-right: 20px; /* Add some padding to space the button from the right edge */
-  }
-  
-  .container {
-    margin-top: 20px;
-  }
-  .image-container {
-    height: 150px; /* Adjust the height as needed */
-    overflow: hidden; /* Ensure that images don't overflow */
-    display: flex;
-    align-items: center;
-    justify-content: center;
+
+.login-container {
+  display: flex;
+  justify-content: flex-end; /* Aligns items to the right side */
+  padding-right: 20px; /* Add some padding to space the button from the right edge */
+}
+
+.container {
+  margin-top: 20px;
+}
+
+.image-container {
+  height: 150px; /* Adjust the height as needed */
+  overflow: hidden; /* Ensure that images don't overflow */
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .image-container .img-fluid {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Ensures images cover the container while maintaining aspect ratio */
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures images cover the container while maintaining aspect ratio */
 }
 
 .img-fluid {
-    max-width: 100%;
-    height: auto;
-    margin-top: 10px;
-    margin-bottom: 5px;
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 5px;
 }
 
-.selected-image-col img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.selected-image-col {
+  height: 270px; /* Set a fixed height for the selected image container */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-  .mb-3{
-    background: white;
-    max-width: 1000px;
-    margin: 0 auto;
 
-  }
+.selected-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.mb-3 {
+  background: white;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
 .carousel-item {
   margin-top: 10px;
 }
-.one{
+
+.one {
   margin-top: -15px;
 }
-.two{
-  height: 100px;
+
+.two {
+  display: flex;
+  align-items: stretch;
+  height: auto; /* Allow the height to adjust dynamically */
 }
-.three{
+
+.three {
   border: 5px solid #e17126;
   background: white;
 }
-.my-container{
-background-color: white;
-margin-top: -20px;
-max-width: 976px;
-padding-top: 5px;
-padding-bottom: 5px;
 
+.my-container {
+  background-color: white;
+  margin-top: -20px;
+  max-width: 976px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
-.four{
+
+.four {
   background-color: gainsboro;
   max-width: 960px;
   margin: auto;
 }
-.five{
+
+.five {
   border: 10px solid #dededc;
   max-width: 960px;
   margin: auto;
-
 }
-.my-container-about{
+
+.my-container-about {
   margin-top: -3px;
   background-color: white;
-max-width: 979px;
-padding-top: 5px;
-padding-bottom: 5px;
+  max-width: 979px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
 
-  }
-  /* Styles.css */
+/* Styles.css */
 .small-text p {
   padding-right: 30px;
   text-align: justify;
@@ -137,12 +157,16 @@ padding-bottom: 5px;
 }
 
 .close {
-  background: transparent;
+  background: black;
   border: none;
   cursor: pointer;
   font-size: 20px;
   color: #555;
 }
+.carousel slide{
+  height: 500px;
+}
+
 /* For medium screens (768px - 992px) */
 @media (min-width: 768px) and (max-width: 992px) {
   .my-container-about {
@@ -166,7 +190,7 @@ padding-bottom: 5px;
     height: 100%;
     object-fit: cover;
   }
-    .small-text {
+  .small-text {
     font-size: 12px;
   }
 }
@@ -183,4 +207,3 @@ padding-bottom: 5px;
     font-size: 10px;
   }
 }
-

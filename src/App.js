@@ -31,9 +31,6 @@ function App() {
     <>
       <div className='outerContainer'>
         <Router>
-          <div className="container">
-            <div className="custom-header">New Age Recall Information</div>
-          </div>
           <Header onProductClick={handleProductsClick} />
           <Routes>
             <Route path="/Avalonwebsite" element={<Home />} />

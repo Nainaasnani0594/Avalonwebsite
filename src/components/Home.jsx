@@ -13,12 +13,12 @@ import slide6 from '../images/10007.jpg';
 function Home() {
   return (
     <>
-      <Container style={{display:"flex"}}>
+      <Container className="d-flex">
         {/* First section with images and carousel */}
-        <Row className="mb-3">
-          <Col md={6}>
-            <Row>
-              <Col md={12}>
+        <Row className="mb-3 w-100">
+          <Col md={6} className="d-flex flex-column">
+            <Row className="flex-grow-1">
+              <Col md={12} className="d-flex align-items-stretch">
                 <Image
                   src={slide}
                   alt="Bedroom Furniture"
@@ -27,8 +27,8 @@ function Home() {
                 />
               </Col>
             </Row>
-            <Row className="mt-3">
-              <Col md={6} className='one'>
+            <Row className="mt-3 flex-grow-1">
+              <Col md={6} className="one d-flex align-items-stretch">
                 <Image
                   src={slide1}
                   alt="Bedroom Furniture"
@@ -36,7 +36,7 @@ function Home() {
                   style={{ width: '100%' }}
                 />
               </Col>
-              <Col md={6} className='one'>
+              <Col md={6} className="one d-flex align-items-stretch">
                 <Image
                   src={slide2}
                   alt="Bedroom Furniture"
@@ -46,30 +46,34 @@ function Home() {
               </Col>
             </Row>
           </Col>
-          <Col md={6} className='two'>
-            <Carousel>
+          <Col md={6} className="two d-flex align-items-stretch" >
+            <Carousel className="w-100">
               <Carousel.Item>
                 <Image
                   src={slide3}
                   alt="Bedroom Furniture"
+                  className="d-block w-100"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <Image
                   src={slide4}
                   alt="Bedroom Furniture"
+                  className="d-block w-100"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <Image
                   src={slide5}
                   alt="Bedroom Furniture"
+                  className="d-block w-100"
                 />
               </Carousel.Item>
               <Carousel.Item>
                 <Image
                   src={slide6}
                   alt="Bedroom Furniture"
+                  className="d-block w-100"
                 />
               </Carousel.Item>
             </Carousel>

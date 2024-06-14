@@ -7,6 +7,7 @@ import four from '../images/dining/D511.jpg';
 import five from '../images/dining/D526.jpg';
 import six from '../images/dining/D622.jpg';
 import './Styles.css'; // Import custom CSS
+
 function Dining() {
     const [selectedImage, setSelectedImage] = useState(one);
 
@@ -21,58 +22,47 @@ function Dining() {
                     <Col xs={6}>
                         {/* Content for the first half */}
                         <Row>
-                            <Col xs={6} onClick={() => handleImageClick(one)}>
-                                <div className="image-container">
-                                    <Image src={one} alt="Bedroom Furniture" className="img-fluid" />
-                                </div>
+                            <Col xs={6} onClick={() => handleImageClick(one)} className="image-container">
+                                <Image src={one} alt="Dining Furniture" className="img-fluid" />
                             </Col>
-                            <Col xs={6} onClick={() => handleImageClick(two)}>
-                                <div className="image-container">
-                                    <Image src={two} alt="Bedroom Furniture" className="img-fluid" />
-                                </div>
+                            <Col xs={6} onClick={() => handleImageClick(two)} className="image-container">
+                                <Image src={two} alt="Dining Furniture" className="img-fluid" />
                             </Col>
                         </Row>
                         <Row>
-                            <Col xs={6} onClick={() => handleImageClick(three)}>
-                                <div className="image-container">
-                                    <Image src={three} alt="Bedroom Furniture" className="img-fluid" />
-                                </div>
+                            <Col xs={6} onClick={() => handleImageClick(three)} className="image-container">
+                                <Image src={three} alt="Dining Furniture" className="img-fluid" />
                             </Col>
-                            <Col xs={6} onClick={() => handleImageClick(four)}>
-                                <div className="image-container">
-                                    <Image src={four} alt="Bedroom Furniture" className="img-fluid" />
-                                </div>
+                            <Col xs={6} onClick={() => handleImageClick(four)} className="image-container">
+                                <Image src={four} alt="Dining Furniture" className="img-fluid" />
                             </Col>
                         </Row>
                         <Row>
-                            <Col xs={6} onClick={() => handleImageClick(five)}>
-                                <div className="image-container">
-                                    <Image src={five} alt="Bedroom Furniture" className="img-fluid" />
-                                </div>
+                            <Col xs={6} onClick={() => handleImageClick(five)} className="image-container">
+                                <Image src={five} alt="Dining Furniture" className="img-fluid" />
                             </Col>
-                            <Col xs={6} onClick={() => handleImageClick(six)}>
-                                <div className="image-container">
-                                    <Image src={six} alt="Bedroom Furniture" className="img-fluid" />
-                                </div>
+                            <Col xs={6} onClick={() => handleImageClick(six)} className="image-container">
+                                <Image src={six} alt="Dining Furniture" className="img-fluid" />
                             </Col>
                         </Row>
                     </Col>
                     <Col xs={6}>
                         {/* Content for the second half */}
                         <Row>
-                            <Col xs={12}>
+                            <Col xs={12} className="selected-image-col" style={{marginTop:'2px'}}>
                                 {/* Display the selected image */}
-                                {selectedImage && <Image src={selectedImage} alt="Selected Image" className="img-fluid" style={{ width: '100%', height: "80%" }} />}
+                                {selectedImage && <Image src={selectedImage} alt="Selected Image" className="img-fluid selected-image" />}
                             </Col>
                         </Row>
                         <Row className="small-text">
-                            <Col xs={12} style={{
+                            <Col xs={12} className="text-container" style={{
                                 fontSize: '13px',
                                 color: '#762a2b',
+                                marginTop: '35px',
                                 left: '50%',
-                                top: '20px',
+                                
                             }}>
-                                <h3 style={{ color: "#E17126", paddingTop: "20px" }}>Dining</h3>
+                                <h3 style={{ color: "#E17126" }}>Dining</h3>
                                 <p>Whether traditional, formal dining is your desire, with its flowing acanthus leaf adornments, and shapely serpentine tables, chairs and storage items; or if a more relaxed, casual and livable design fits your lifestyle; you can expect quality and sophistication to abound with Avalon dining products.</p>
                                 <p>From the farmhouses in northern Europe, to the penthouses overlooking a cityscape; these inspirations drive our designs.</p>
                             </Col>
@@ -94,4 +84,5 @@ function Dining() {
         </>
     );
 }
+
 export default Dining;
