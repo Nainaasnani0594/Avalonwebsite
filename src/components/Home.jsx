@@ -16,7 +16,7 @@ function Home() {
       <Container className="d-flex">
         {/* First section with images and carousel */}
         <Row className="mb-3 w-100">
-          <Col md={6} className="d-flex flex-column">
+          <Col md={5} className="d-flex flex-column">
             <Row className="flex-grow-1">
               <Col md={12} className="d-flex align-items-stretch">
                 <Image
@@ -46,7 +46,7 @@ function Home() {
               </Col>
             </Row>
           </Col>
-          <Col md={6} className="two d-flex align-items-stretch" >
+          <Col md={7} className="two d-flex align-items-stretch" >
             <Carousel className="w-100">
               <Carousel.Item>
                 <Image
