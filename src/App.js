@@ -9,7 +9,8 @@ import Bedroom from './components/Bedroom';
 import Dining from './components/Dining';
 import ContactUs from './components/ContactUs';
 import Upholstery from './components/Upholstery';
-import ProductForm from './components/ProductForm'; // Import ProductForm component
+import ProductForm from './components/ProductForm';
+import OurProducts from './components/OurProducts';
 
 function App() {
   return (
@@ -21,34 +22,41 @@ function App() {
 
 function AppContent() {
   const [showProductForm, setShowProductForm] = useState(false);
-  const [formSubmitted, setFormSubmitted] = useState(false); // State to track form submission
-  const [prevUrl, setPrevUrl] = useState(""); // State to keep track of previous URL
+  const [formSubmitted, setFormSubmitted] = useState(false);
+  const [selectedProduct, setSelectedProduct] = useState('');
+  const [message, setMessage] = useState('');
   const location = useLocation();
   const navigate = useNavigate();
 
   useEffect(() => {
     if (showProductForm) {
-      setPrevUrl(location.pathname);
+      setSelectedProduct(location.pathname);
     }
   }, [showProductForm, location]);
 
   const handleProductsClick = () => {
-    if (!formSubmitted) {
-      setShowProductForm(true);
-    }
+    setFormSubmitted(false);
+    setShowProductForm(true);
   };
 
   const handleFormSubmit = (formData) => {
-    // Handle form submission here, e.g., send data to backend
     console.log(formData);
-    setFormSubmitted(true); // Mark form as submitted
-    setShowProductForm(false); // Close the modal after submission
+    setFormSubmitted(true);
+    setShowProductForm(false);
+    setMessage('');
+
+    // Navigate to the selected product page
+    navigate(`/${formData.requiredProduct.toLowerCase()}`);
   };
 
   const handleCloseForm = () => {
-    setShowProductForm(false); // Close the modal
-    if (prevUrl) {
-      navigate(prevUrl); // Navigate back to the previous URL
+    setShowProductForm(false);
+    if (!formSubmitted) {
+      setMessage('Please select any product and fill out the form first.');
+      navigate('/ourproducts'); // Redirect to OurProducts page
+    } else {
+      setMessage('');
+      navigate(selectedProduct); // Redirect to the previously selected product page
     }
   };
 
@@ -63,6 +71,7 @@ function AppContent() {
           <Route path="/dining" element={<Dining />} />
           <Route path="/upholstery" element={<Upholstery />} />
           <Route path="/contactus" element={<ContactUs />} />
+          <Route path="/ourproducts" element={<OurProducts message={message} />} />
         </Routes>
       </div>
       {showProductForm && (
