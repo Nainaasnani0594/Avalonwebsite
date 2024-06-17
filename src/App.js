@@ -65,7 +65,7 @@ function AppContent() {
       <div className='outerContainer'>
         <Header onProductClick={handleProductsClick} />
         <Routes>
-          <Route path="/Avalonwebsite" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/bedroom" element={<Bedroom />} />
           <Route path="/dining" element={<Dining />} />
