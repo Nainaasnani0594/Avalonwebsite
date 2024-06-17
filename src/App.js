@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Route, Routes, useNavigate, useLocation } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 import { Header } from './components/Header';
@@ -12,8 +12,25 @@ import Upholstery from './components/Upholstery';
 import ProductForm from './components/ProductForm'; // Import ProductForm component
 
 function App() {
+  return (
+    <Router>
+      <AppContent />
+    </Router>
+  );
+}
+
+function AppContent() {
   const [showProductForm, setShowProductForm] = useState(false);
   const [formSubmitted, setFormSubmitted] = useState(false); // State to track form submission
+  const [prevUrl, setPrevUrl] = useState(""); // State to keep track of previous URL
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    if (showProductForm) {
+      setPrevUrl(location.pathname);
+    }
+  }, [showProductForm, location]);
 
   const handleProductsClick = () => {
     if (!formSubmitted) {
@@ -29,25 +46,26 @@ function App() {
   };
 
   const handleCloseForm = () => {
-    setShowProductForm(false); // Function to close the form modal
+    setShowProductForm(false); // Close the modal
+    if (prevUrl) {
+      navigate(prevUrl); // Navigate back to the previous URL
+    }
   };
 
   return (
     <>
       <div className='outerContainer'>
-        <Router>
-          <Header onProductClick={handleProductsClick} />
-          <Routes>
-            <Route path="/Avalonwebsite" element={<Home />} />
-            <Route path="/aboutus" element={<AboutUs />} />
-            <Route path="/bedroom" element={<Bedroom />} />
-            <Route path="/dining" element={<Dining />} />
-            <Route path="/upholstery" element={<Upholstery />} />
-            <Route path="/contactus" element={<ContactUs />} />
-          </Routes>
-        </Router>
+        <Header onProductClick={handleProductsClick} />
+        <Routes>
+          <Route path="/Avalonwebsite" element={<Home />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/bedroom" element={<Bedroom />} />
+          <Route path="/dining" element={<Dining />} />
+          <Route path="/upholstery" element={<Upholstery />} />
+          <Route path="/contactus" element={<ContactUs />} />
+        </Routes>
       </div>
-      {showProductForm && !formSubmitted && (
+      {showProductForm && (
         <ProductForm onSubmit={handleFormSubmit} onClose={handleCloseForm} />
       )}
     </>

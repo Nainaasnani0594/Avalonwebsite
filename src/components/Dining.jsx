@@ -58,13 +58,15 @@ function Dining() {
                             <Col xs={12} className="text-container" style={{
                                 fontSize: '13px',
                                 color: '#762a2b',
-                                marginTop: '35px',
+                                marginTop: '25px',
                                 left: '50%',
                                 
                             }}>
                                 <h3 style={{ color: "#E17126" }}>Dining</h3>
                                 <p>Whether traditional, formal dining is your desire, with its flowing acanthus leaf adornments, and shapely serpentine tables, chairs and storage items; or if a more relaxed, casual and livable design fits your lifestyle; you can expect quality and sophistication to abound with Avalon dining products.</p>
                                 <p>From the farmhouses in northern Europe, to the penthouses overlooking a cityscape; these inspirations drive our designs.</p>
+                                <p>From the farmhouses in northern Europe, to the penthouses overlooking a cityscape; these inspirations drive our designs.</p>
+
                             </Col>
                         </Row>
                     </Col>

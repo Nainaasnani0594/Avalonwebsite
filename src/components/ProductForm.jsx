@@ -46,9 +46,9 @@ const ProductForm = ({ onSubmit, onClose }) => {
         <div className="modal-content">
           <div className="modal-header">
             <h5 className="modal-title">Request Product</h5>
-            <button type="button" className="close" onClick={onClose} aria-label="Close">
+            {/* <button type="button" className="close" onClick={onClose} aria-label="Close">
               <span aria-hidden="true">&times;</span>
-            </button>
+            </button> */}
           </div>
           <div className="modal-body">
             <form onSubmit={handleSubmit}>

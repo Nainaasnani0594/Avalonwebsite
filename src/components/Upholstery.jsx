@@ -55,10 +55,10 @@ function Upholstery() {
                             </Col>
                         </Row>
                         <Row className="small-text">
-                            <Col xs={12} className="text-container" style={{
+                            <Col xs={12}  style={{
                                 fontSize: '13px',
                                 color: '#762a2b',
-                                marginTop: '25px',
+                                marginTop: '35px',
                                 left: '50%',
                                 
                             }}>

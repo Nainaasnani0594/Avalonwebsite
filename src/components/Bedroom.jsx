@@ -55,10 +55,10 @@ function Bedroom() {
                             </Col>
                         </Row>
                         <Row className="small-text">
-                            <Col xs={12} style={{
+                            <Col xs={12}  style={{
                                 fontSize: '13px',
                                 color: '#762a2b',
-                                marginTop: '-5px',
+                                marginTop: '15px',
                                 left: '50%',
                                 
                             }}>
