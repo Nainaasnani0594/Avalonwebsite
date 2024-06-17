@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import LazyLoad from 'react-lazyload'; // Import LazyLoad
-import one from '../images/dining/D118.jpg';
-import two from '../images/dining/D162.jpg';
-import three from '../images/dining/D323.jpg';
-import four from '../images/dining/D511.jpg';
-import five from '../images/dining/D526.jpg';
-import six from '../images/dining/D622.jpg';
+import one from '../images/D118.jpg';
+import two from '../images/D162.jpg';
+import three from '../images/D323.jpg';
+import four from '../images/D511.jpg';
+import five from '../images/D526.jpg';
+import six from '../images/D622.jpg';
 import './Styles.css'; // Import custom CSS
 
 function Dining() {

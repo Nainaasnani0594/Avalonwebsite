@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import LazyLoad from 'react-lazyload'; // Import LazyLoad
-import one from '../images/bedroom/B193.jpg';
-import two from '../images/bedroom/B226.jpg';
-import three from '../images/bedroom/B566.jpg';
-import four from '../images/bedroom/B961.jpg';
-import five from '../images/bedroom/B1209.jpg';
-import six from '../images/bedroom/B1495.jpg';
+import one from '../images/B193.jpg';
+import two from '../images/B226.jpg';
+import three from '../images/B566.jpg';
+import four from '../images/B961.jpg';
+import five from '../images/B1209.jpg';
+import six from '../images/B1495.jpg';
 import './Styles.css'; // Import custom CSS
 
 function Bedroom() {

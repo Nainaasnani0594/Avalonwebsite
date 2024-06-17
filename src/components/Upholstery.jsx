@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import LazyLoad from 'react-lazyload'; // Import LazyLoad
-import one from '../images/upholstery/u1.jpg';
-import two from '../images/upholstery/u7.jpg';
-import three from '../images/upholstery/u3.jpg';
-import four from '../images/upholstery/u4.jpg';
-import five from '../images/upholstery/u5.jpg';
-import six from '../images/upholstery/u7.jpg';
+import one from '../images/u1.jpg';
+import two from '../images/u7.jpg';
+import three from '../images/u3.jpg';
+import four from '../images/u4.jpg';
+import five from '../images/u5.jpg';
+import six from '../images/u7.jpg';
 import './Styles.css'; // Import custom CSS
 
 function Upholstery() {

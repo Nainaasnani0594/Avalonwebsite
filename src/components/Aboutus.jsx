@@ -1,16 +1,16 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import LazyLoad from 'react-lazyload'; // Import LazyLoad
-import one from '../images/about/B362.jpg';
-import two from '../images/about/B518.jpg';
-import three from '../images/about/B1550.jpg';
-import four from '../images/about/B2404.jpg';
-import five from '../images/about/D118.jpg';
-import six from '../images/about/D162.jpg';
+import one from '../images/B362.jpg';
+import two from '../images/B518.jpg';
+import three from '../images/B1550.jpg';
+import four from '../images/B2404.jpg';
+import five from '../images/D118.jpg';
+import six from '../images/D253.jpg';
 import './Styles.css'; // Import custom CSS
 
 function AboutUs() {
-    const [selectedImage, setSelectedImage] = useState(one); // Set the default selected image to the first image
+    const [selectedImage, setSelectedImage] = useState(one); 
 
     const handleImageClick = (imageSrc) => {
         setSelectedImage(imageSrc);
