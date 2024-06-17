@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
+import LazyLoad from 'react-lazyload'; // Import LazyLoad
 import one from '../images/about/B362.jpg';
 import two from '../images/about/B518.jpg';
 import three from '../images/about/B1550.jpg';
@@ -19,41 +20,53 @@ function AboutUs() {
         <>
             <Container className='my-container-about'>
                 <Row>
-                    <Col xs={6} style={{marginTop:'5px'}}>
+                    <Col xs={6} style={{ marginTop: '5px' }}>
                         {/* Content for the first half */}
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(one)}>
                                 <div className="image-container">
-                                    <Image src={one} alt="About Us" className="img-fluid" />
+                                    <LazyLoad height={200} offset={100}>
+                                        <Image src={one} alt="About Us" className="img-fluid" />
+                                    </LazyLoad>
                                 </div>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(two)}>
                                 <div className="image-container">
-                                    <Image src={two} alt="About Us" className="img-fluid" />
+                                    <LazyLoad height={200} offset={100}>
+                                        <Image src={two} alt="About Us" className="img-fluid" />
+                                    </LazyLoad>
                                 </div>
                             </Col>
                         </Row>
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(three)}>
                                 <div className="image-container">
-                                    <Image src={three} alt="About Us" className="img-fluid" />
+                                    <LazyLoad height={200} offset={100}>
+                                        <Image src={three} alt="About Us" className="img-fluid" />
+                                    </LazyLoad>
                                 </div>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(four)}>
                                 <div className="image-container">
-                                    <Image src={four} alt="About Us" className="img-fluid" />
+                                    <LazyLoad height={200} offset={100}>
+                                        <Image src={four} alt="About Us" className="img-fluid" />
+                                    </LazyLoad>
                                 </div>
                             </Col>
                         </Row>
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(five)}>
                                 <div className="image-container">
-                                    <Image src={five} alt="About Us" className="img-fluid" />
+                                    <LazyLoad height={200} offset={100}>
+                                        <Image src={five} alt="About Us" className="img-fluid" />
+                                    </LazyLoad>
                                 </div>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(six)}>
                                 <div className="image-container">
-                                    <Image src={six} alt="About Us" className="img-fluid" />
+                                    <LazyLoad height={200} offset={100}>
+                                        <Image src={six} alt="About Us" className="img-fluid" />
+                                    </LazyLoad>
                                 </div>
                             </Col>
                         </Row>
@@ -61,9 +74,11 @@ function AboutUs() {
                     <Col xs={6}>
                         {/* Content for the second half */}
                         <Row>
-                            <Col xs={12} className="selected-image-col" style={{marginTop:'-3px'}}>
+                            <Col xs={12} className="selected-image-col" style={{ marginTop: '-3px' }}>
                                 {/* Display the selected image */}
-                                {selectedImage && <Image src={selectedImage} alt="Selected Image" className="img-fluid" />}
+                                {selectedImage && (
+                                    <Image src={selectedImage} alt="Selected Image" className="img-fluid" />
+                                )}
                             </Col>
                         </Row>
                         <Row className="small-text">

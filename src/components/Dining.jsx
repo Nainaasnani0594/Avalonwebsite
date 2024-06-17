@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
+import LazyLoad from 'react-lazyload'; // Import LazyLoad
 import one from '../images/dining/D118.jpg';
 import two from '../images/dining/D162.jpg';
 import three from '../images/dining/D323.jpg';
@@ -23,26 +24,38 @@ function Dining() {
                         {/* Content for the first half */}
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(one)} className="image-container">
-                                <Image src={one} alt="Dining Furniture" className="img-fluid" />
+                                <LazyLoad height={200} offset={100}>
+                                    <Image src={one} alt="Dining Furniture" className="img-fluid" />
+                                </LazyLoad>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(two)} className="image-container">
-                                <Image src={two} alt="Dining Furniture" className="img-fluid" />
+                                <LazyLoad height={200} offset={100}>
+                                    <Image src={two} alt="Dining Furniture" className="img-fluid" />
+                                </LazyLoad>
                             </Col>
                         </Row>
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(three)} className="image-container">
-                                <Image src={three} alt="Dining Furniture" className="img-fluid" />
+                                <LazyLoad height={200} offset={100}>
+                                    <Image src={three} alt="Dining Furniture" className="img-fluid" />
+                                </LazyLoad>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(four)} className="image-container">
-                                <Image src={four} alt="Dining Furniture" className="img-fluid" />
+                                <LazyLoad height={200} offset={100}>
+                                    <Image src={four} alt="Dining Furniture" className="img-fluid" />
+                                </LazyLoad>
                             </Col>
                         </Row>
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(five)} className="image-container">
-                                <Image src={five} alt="Dining Furniture" className="img-fluid" />
+                                <LazyLoad height={200} offset={100}>
+                                    <Image src={five} alt="Dining Furniture" className="img-fluid" />
+                                </LazyLoad>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(six)} className="image-container">
-                                <Image src={six} alt="Dining Furniture" className="img-fluid" />
+                                <LazyLoad height={200} offset={100}>
+                                    <Image src={six} alt="Dining Furniture" className="img-fluid" />
+                                </LazyLoad>
                             </Col>
                         </Row>
                     </Col>
@@ -66,7 +79,6 @@ function Dining() {
                                 <p>Whether traditional, formal dining is your desire, with its flowing acanthus leaf adornments, and shapely serpentine tables, chairs and storage items; or if a more relaxed, casual and livable design fits your lifestyle; you can expect quality and sophistication to abound with Avalon dining products.</p>
                                 <p>From the farmhouses in northern Europe, to the penthouses overlooking a cityscape; these inspirations drive our designs.</p>
                                 <p>From the farmhouses in northern Europe, to the penthouses overlooking a cityscape; these inspirations drive our designs.</p>
-
                             </Col>
                         </Row>
                     </Col>

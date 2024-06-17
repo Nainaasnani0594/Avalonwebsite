@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
+import LazyLoad from 'react-lazyload'; // Import LazyLoad
 import one from '../images/bedroom/B193.jpg';
 import two from '../images/bedroom/B226.jpg';
 import three from '../images/bedroom/B566.jpg';
@@ -23,26 +24,38 @@ function Bedroom() {
                         {/* Content for the first half */}
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(one)} className="image-container">
-                                <Image src={one} alt="Bedroom Furniture" className="img-fluid" />
+                                <LazyLoad height={200} offset={100}>
+                                    <Image src={one} alt="Bedroom Furniture" className="img-fluid" />
+                                </LazyLoad>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(two)} className="image-container">
-                                <Image src={two} alt="Bedroom Furniture" className="img-fluid" />
+                                <LazyLoad height={200} offset={100}>
+                                    <Image src={two} alt="Bedroom Furniture" className="img-fluid" />
+                                </LazyLoad>
                             </Col>
                         </Row>
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(three)} className="image-container">
-                                <Image src={three} alt="Bedroom Furniture" className="img-fluid" />
+                                <LazyLoad height={200} offset={100}>
+                                    <Image src={three} alt="Bedroom Furniture" className="img-fluid" />
+                                </LazyLoad>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(four)} className="image-container">
-                                <Image src={four} alt="Bedroom Furniture" className="img-fluid" />
+                                <LazyLoad height={200} offset={100}>
+                                    <Image src={four} alt="Bedroom Furniture" className="img-fluid" />
+                                </LazyLoad>
                             </Col>
                         </Row>
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(five)} className="image-container">
-                                <Image src={five} alt="Bedroom Furniture" className="img-fluid" />
+                                <LazyLoad height={200} offset={100}>
+                                    <Image src={five} alt="Bedroom Furniture" className="img-fluid" />
+                                </LazyLoad>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(six)} className="image-container">
-                                <Image src={six} alt="Bedroom Furniture" className="img-fluid" />
+                                <LazyLoad height={200} offset={100}>
+                                    <Image src={six} alt="Bedroom Furniture" className="img-fluid" />
+                                </LazyLoad>
                             </Col>
                         </Row>
                     </Col>
@@ -85,4 +98,5 @@ function Bedroom() {
         </>
     );
 }
+
 export default Bedroom;
