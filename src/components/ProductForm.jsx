@@ -1,14 +1,24 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Styles.css'; 
 import emailjs from 'emailjs-com';
 
-const ProductForm = ({ onSubmit, onClose }) => {
+const ProductForm = ({ onSubmit, onClose, selectedProduct }) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
     phone: '',
-    requiredProduct: ''
+    requiredProduct: selectedProduct || ''
   });
+
+  const [formSubmittedForProduct, setFormSubmittedForProduct] = useState(false);
+
+  useEffect(() => {
+    // Check local storage if form has been submitted for this product
+    const submittedProduct = localStorage.getItem(selectedProduct);
+    if (submittedProduct) {
+      setFormSubmittedForProduct(true);
+    }
+  }, [selectedProduct]);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -22,6 +32,9 @@ const ProductForm = ({ onSubmit, onClose }) => {
     e.preventDefault();
     sendEmail(formData);
     onSubmit(formData); 
+
+    // Mark product as submitted in local storage
+    localStorage.setItem(selectedProduct, 'true');
   };
 
   const sendEmail = (formData) => {
@@ -39,6 +52,10 @@ const ProductForm = ({ onSubmit, onClose }) => {
         console.error('FAILED...', error);
       });
   };
+
+  if (formSubmittedForProduct) {
+    return null; // If form already submitted for this product, don't render the form
+  }
 
   return (
     <div className="modal" tabIndex="-1" role="dialog">

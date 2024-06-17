@@ -75,12 +75,10 @@ function AppContent() {
         </Routes>
       </div>
       {showProductForm && (
-        <ProductForm onSubmit={handleFormSubmit} onClose={handleCloseForm} />
+        <ProductForm onSubmit={handleFormSubmit} onClose={handleCloseForm} selectedProduct={selectedProduct} />
       )}
     </>
   );
 }
 
 export default App;
-
-

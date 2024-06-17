@@ -22,7 +22,7 @@ export const Header = ({ onProductClick }) => {
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="ms-auto">
-              <Nav.Link as={Link} to="/home">Home</Nav.Link>
+              <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link as={Link} to="/aboutus">About Us</Nav.Link>
               <NavDropdown title="Our Products" id="basic-nav-dropdown">
                 <NavDropdown.Item onClick={handleClick} as={Link} to="/bedroom">Bedroom</NavDropdown.Item>
