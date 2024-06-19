@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import LazyLoad from 'react-lazyload'; // Import LazyLoad
-import one from '../images/B193.jpg';
-import two from '../images/B226.jpg';
-import three from '../images/B566.jpg';
-import four from '../images/B961.jpg';
-import five from '../images/B1209.jpg';
-import six from '../images/B1495.jpg';
+import one from '../images/home/B961.jpeg';
+import two from '../images/home/B1495.jpeg';
+import three from '../images/home/B1209.jpeg';
+import four from '../images/home/B1623.jpeg';
+import five from '../images/home/B193.jpeg';
+import six from '../images/home/B566.jpeg';
+import seven from '../images/home/B226.jpeg';
 import './Styles.css'; // Import custom CSS
 
 function Bedroom() {
-    const [selectedImage, setSelectedImage] = useState(one);
+    const [selectedImage, setSelectedImage] = useState(seven);
 
     const handleImageClick = (imageSrc) => {
         setSelectedImage(imageSrc);

@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import LazyLoad from 'react-lazyload'; // Import LazyLoad
-import one from '../images/u1.jpg';
-import two from '../images/u7.jpg';
-import three from '../images/u3.jpg';
-import four from '../images/u4.jpg';
-import five from '../images/u5.jpg';
-import six from '../images/u7.jpg';
+import one from '../images/home/U6051.png';
+import two from '../images/home/U1080.jpeg';
+import three from '../images/home/U6020.png';
+import four from '../images/home/U3090.jpeg';
+import five from '../images/home/U1280.jpeg';
+import six from '../images/home/U3075.jpeg';
+import seven from '../images/home/U6080.jpeg';
 import './Styles.css'; // Import custom CSS
 
 function Upholstery() {
-    const [selectedImage, setSelectedImage] = useState(one);
+    const [selectedImage, setSelectedImage] = useState(seven);
 
     const handleImageClick = (imageSrc) => {
         setSelectedImage(imageSrc);

@@ -1,16 +1,18 @@
 import React, { useState } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import LazyLoad from 'react-lazyload'; // Import LazyLoad
-import one from '../images/D118.jpg';
-import two from '../images/D162.jpg';
-import three from '../images/D323.jpg';
-import four from '../images/D511.jpg';
-import five from '../images/D526.jpg';
-import six from '../images/D622.jpg';
+import one from '../images/home/D162.jpeg';
+import two from '../images/home/D511.jpeg';
+import three from '../images/home/D526.jpeg';
+import four from '../images/home/D118.jpeg';
+import five from '../images/home/D622.jpeg';
+import six from '../images/home/D1623.jpeg';
+import seven from '../images/home/D323.jpeg';
+
 import './Styles.css'; // Import custom CSS
 
 function Dining() {
-    const [selectedImage, setSelectedImage] = useState(one);
+    const [selectedImage, setSelectedImage] = useState(seven);
 
     const handleImageClick = (imageSrc) => {
         setSelectedImage(imageSrc);

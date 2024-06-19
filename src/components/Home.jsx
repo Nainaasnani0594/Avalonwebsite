@@ -2,13 +2,13 @@ import React from 'react';
 import './Styles.css'; // Import custom CSS
 import Container from 'react-bootstrap/Container';
 import { Row, Col, Image, Carousel } from 'react-bootstrap';
-import slide from '../images/10013.jpg';
-import slide1 from '../images/10002.jpg';
-import slide2 from '../images/10003.jpg';
-import slide3 from '../images/10004.jpg';
-import slide4 from '../images/10005.jpg';
-import slide5 from '../images/10006.jpg';
-import slide6 from '../images/10007.jpg';
+import slide from '../images/home/B299.jpeg';
+import slide1 from '../images/home/B775.jpeg';
+import slide2 from '../images/home/B913.jpeg';
+import slide3 from '../images/home/B912.jpeg';
+import slide4 from '../images/home/B162.jpeg';
+import slide5 from '../images/home/B2122.jpeg';
+import slide6 from '../images/home/B323.jpeg';
 
 function Home() {
   return (
@@ -23,7 +23,7 @@ function Home() {
                   src={slide}
                   alt="Bedroom Furniture"
                   className="img-fluid"
-                  style={{ width: '100%' }}
+                  style={{ width: '100%', height: '170px' }}
                 />
               </Col>
             </Row>
