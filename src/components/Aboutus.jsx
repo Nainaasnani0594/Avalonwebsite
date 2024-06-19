@@ -41,7 +41,7 @@ function AboutUs() {
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(three)}>
                                 <div className="image-container">
-                                    <LazyLoad height={200} offset={100}>
+                                    <LazyLoad height={190} offset={100}>
                                         <Image src={three} alt="About Us" className="img-fluid" />
                                     </LazyLoad>
                                 </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Styles.css'; 
+import './Styles.css';
 import emailjs from 'emailjs-com';
 
 const ProductForm = ({ onSubmit, onClose, selectedProduct }) => {
@@ -31,7 +31,7 @@ const ProductForm = ({ onSubmit, onClose, selectedProduct }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     sendEmail(formData);
-    onSubmit(formData); 
+    onSubmit(formData);
 
     // Mark product as submitted in local storage
     localStorage.setItem(selectedProduct, 'true');

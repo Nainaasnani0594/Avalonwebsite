@@ -10,7 +10,6 @@ import Dining from './components/Dining';
 import ContactUs from './components/ContactUs';
 import Upholstery from './components/Upholstery';
 import ProductForm from './components/ProductForm';
-import OurProducts from './components/OurProducts';
 
 function App() {
   return (
@@ -51,13 +50,8 @@ function AppContent() {
 
   const handleCloseForm = () => {
     setShowProductForm(false);
-    if (!formSubmitted) {
-      setMessage('Please select any product and fill out the form first.');
-      navigate('/ourproducts'); // Redirect to OurProducts page
-    } else {
-      setMessage('');
-      navigate(selectedProduct); // Redirect to the previously selected product page
-    }
+    setMessage('');
+    navigate('/'); // Redirect to Home page when form is closed
   };
 
   return (
@@ -71,7 +65,7 @@ function AppContent() {
           <Route path="/dining" element={<Dining />} />
           <Route path="/upholstery" element={<Upholstery />} />
           <Route path="/contactus" element={<ContactUs />} />
-          <Route path="/ourproducts" element={<OurProducts message={message} />} />
+          <Route path="/" element={<Home message={message} />} />
         </Routes>
       </div>
       {showProductForm && (
