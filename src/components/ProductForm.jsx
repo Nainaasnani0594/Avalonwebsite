@@ -67,7 +67,7 @@ const ProductForm = ({ onSubmit, onClose, selectedProduct }) => {
       <div className="modal-dialog" role="document">
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title">Fill details to browse</h5>
+            <h5 className="modal-title" style={{color: '#742829', fontSize: '25px'}}>Fill details to browse</h5>
             <button type="button" className="close" onClick={onClose} aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -91,7 +91,7 @@ const ProductForm = ({ onSubmit, onClose, selectedProduct }) => {
                   <option value="Upholstery">Upholstery</option>
                 </select>
               </div>
-              <button type="submit" className="btn btn-primary">Submit</button>
+              <button type="submit" className="btn btn-primary" style={{backgroundColor: '#E27830'}}>Submit</button>
             </form>
           </div>
         </div>
