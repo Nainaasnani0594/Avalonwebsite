@@ -67,7 +67,7 @@ const ProductForm = ({ onSubmit, onClose, selectedProduct }) => {
       <div className="modal-dialog" role="document">
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title">Fill your details on browser</h5>
+            <h5 className="modal-title">Fill details to browse</h5>
             <button type="button" className="close" onClick={onClose} aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
