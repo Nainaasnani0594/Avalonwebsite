@@ -104,7 +104,7 @@ function Dining() {
 
             <Container className="my-container-about">
                 <Row className="mb-3 my-row">
-                    <div className='three'></div>
+                    <div className='three'style={{marginTop:'12px'}}></div>
                 </Row>
             </Container>
             <Container className="my-container-about">

@@ -106,7 +106,7 @@ function AboutUs() {
 
             <Container className="my-container-about">
                 <Row className="mb-3 my-row">
-                    <div className='three'></div>
+                    <div className='three' style={{marginTop:'10px'}}></div>
                 </Row>
             </Container>
             <Container className="my-container-about">
