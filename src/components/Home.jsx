@@ -92,7 +92,7 @@ function Home() {
       <Container className="my-container">
         <Row className='four' style={{ display: 'flex', alignItems: 'center' }}>
           <Col xs={6} style={{ textAlign: "center", paddingTop: "60px" }}>
-            <h3 style={{ color: "#762A2B" }}>Furnishing your home</h3>
+            <h2 style={{ color: "#762A2B" }}>Furnishing your home</h2>
             <h2 style={{ color: "#E17126" }}>with style, sophistication, and value</h2>
           </Col>
           <Col xs={6} style={{ 

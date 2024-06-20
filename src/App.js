@@ -24,18 +24,12 @@ function AppContent() {
   const [formSubmitted, setFormSubmitted] = useState(false);
   const [selectedProduct, setSelectedProduct] = useState('');
   const [message, setMessage] = useState('');
-  const location = useLocation();
   const navigate = useNavigate();
 
-  useEffect(() => {
-    if (showProductForm) {
-      setSelectedProduct(location.pathname);
-    }
-  }, [showProductForm, location]);
-
-  const handleProductsClick = () => {
+  const handleProductClick = (product) => {
     setFormSubmitted(false);
     setShowProductForm(true);
+    setSelectedProduct(product);
   };
 
   const handleFormSubmit = (formData) => {
@@ -57,7 +51,7 @@ function AppContent() {
   return (
     <>
       <div className='outerContainer'>
-        <Header onProductClick={handleProductsClick} />
+        <Header onProductClick={handleProductClick} />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/aboutus" element={<AboutUs />} />

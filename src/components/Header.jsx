@@ -8,8 +8,8 @@ import NavDropdown from 'react-bootstrap/NavDropdown'; // Import NavDropdown
 import logo1 from '../images/LOGO.png';
 
 export const Header = ({ onProductClick }) => {
-  const handleClick = () => {
-    onProductClick();
+  const handleProductClick = (product) => {
+    onProductClick(product);
   };
 
   return (
@@ -25,9 +25,9 @@ export const Header = ({ onProductClick }) => {
               <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link as={Link} to="/aboutus">About Us</Nav.Link>
               <NavDropdown title="Our Products" id="basic-nav-dropdown">
-                <NavDropdown.Item onClick={handleClick} as={Link} to="/bedroom">Bedroom</NavDropdown.Item>
-                <NavDropdown.Item onClick={handleClick} as={Link} to="/dining">Dining</NavDropdown.Item>
-                <NavDropdown.Item onClick={handleClick} as={Link} to="/upholstery">Upholstery</NavDropdown.Item>
+                <NavDropdown.Item onClick={() => handleProductClick('Bedroom')} as={Link} to="/bedroom">Bedroom</NavDropdown.Item>
+                <NavDropdown.Item onClick={() => handleProductClick('Dining')} as={Link} to="/dining">Dining</NavDropdown.Item>
+                <NavDropdown.Item onClick={() => handleProductClick('Upholstery')} as={Link} to="/upholstery">Upholstery</NavDropdown.Item>
               </NavDropdown>
               <Nav.Link as={Link} to="/contactus">Contact Us</Nav.Link>
             </Nav>

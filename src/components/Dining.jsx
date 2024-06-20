@@ -6,8 +6,8 @@ import two from '../images/home/D511.jpeg';
 import three from '../images/home/D526.jpeg';
 import four from '../images/home/D118.jpeg';
 import five from '../images/home/D622.jpeg';
-import six from '../images/home/D1623.jpeg';
-import seven from '../images/home/D323.jpeg';
+import six from '../images/home/D323.jpeg';
+import seven from '../images/home/D1623.jpeg';
 
 import './Styles.css'; // Import custom CSS
 
@@ -25,39 +25,51 @@ function Dining() {
                     <Col xs={6}>
                         {/* Content for the first half */}
                         <Row>
-                            <Col xs={6} onClick={() => handleImageClick(one)} className="image-container">
+                            <Col xs={6} onClick={() => handleImageClick(one)}>
+                            <div className="image-container fixed-height">
                                 <LazyLoad height={200} offset={100}>
-                                    <Image src={one} alt="Dining Furniture" className="img-fluid" />
+                                    <Image src={one} alt="Dining Furniture" className="img-fluid fixed-image" />
                                 </LazyLoad>
+                                </div>
                             </Col>
-                            <Col xs={6} onClick={() => handleImageClick(two)} className="image-container">
+                            <Col xs={6} onClick={() => handleImageClick(two)}>
+                            <div className="image-container fixed-height">
                                 <LazyLoad height={200} offset={100}>
-                                    <Image src={two} alt="Dining Furniture" className="img-fluid" />
+                                    <Image src={two} alt="Dining Furniture" className="img-fluid fixed-image" />
                                 </LazyLoad>
-                            </Col>
-                        </Row>
-                        <Row>
-                            <Col xs={6} onClick={() => handleImageClick(three)} className="image-container">
-                                <LazyLoad height={200} offset={100}>
-                                    <Image src={three} alt="Dining Furniture" className="img-fluid" />
-                                </LazyLoad>
-                            </Col>
-                            <Col xs={6} onClick={() => handleImageClick(four)} className="image-container">
-                                <LazyLoad height={200} offset={100}>
-                                    <Image src={four} alt="Dining Furniture" className="img-fluid" />
-                                </LazyLoad>
+                                </div>
                             </Col>
                         </Row>
                         <Row>
-                            <Col xs={6} onClick={() => handleImageClick(five)} className="image-container">
+                            <Col xs={6} onClick={() => handleImageClick(three)}>
+                            <div className="image-container fixed-height">
                                 <LazyLoad height={200} offset={100}>
-                                    <Image src={five} alt="Dining Furniture" className="img-fluid" />
+                                    <Image src={three} alt="Dining Furniture" className="img-fluid fixed-image" />
                                 </LazyLoad>
+                                </div>
                             </Col>
-                            <Col xs={6} onClick={() => handleImageClick(six)} className="image-container">
+                            <Col xs={6} onClick={() => handleImageClick(four)}>
+                            <div className="image-container fixed-height">
                                 <LazyLoad height={200} offset={100}>
-                                    <Image src={six} alt="Dining Furniture" className="img-fluid" />
+                                    <Image src={four} alt="Dining Furniture" className="img-fluid fixed-image" />
                                 </LazyLoad>
+                                </div>
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col xs={6} onClick={() => handleImageClick(five)}>
+                            <div className="image-container fixed-height">
+                                <LazyLoad height={200} offset={100}>
+                                    <Image src={five} alt="Dining Furniture" className="img-fluid fixed-image" />
+                                </LazyLoad>
+                                </div>
+                            </Col>
+                            <Col xs={6} onClick={() => handleImageClick(six)}>
+                            <div className="image-container fixed-height">
+                                <LazyLoad height={200} offset={100}>
+                                    <Image src={six} alt="Dining Furniture" className="img-fluid fixed-image" />
+                                </LazyLoad>
+                                </div>
                             </Col>
                         </Row>
                     </Col>
@@ -70,7 +82,7 @@ function Dining() {
                             </Col>
                         </Row>
                         <Row className="small-text">
-                            <Col xs={12} className="text-container" style={{
+                            <Col xs={12}  style={{
                                 fontSize: '13px',
                                 color: '#762a2b',
                                 marginTop: '25px',

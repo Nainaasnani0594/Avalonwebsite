@@ -17,6 +17,11 @@ const ProductForm = ({ onSubmit, onClose, selectedProduct }) => {
     const submittedProduct = localStorage.getItem(selectedProduct);
     if (submittedProduct) {
       setFormSubmittedForProduct(true);
+    } else {
+      setFormData((prevData) => ({
+        ...prevData,
+        requiredProduct: selectedProduct,
+      }));
     }
   }, [selectedProduct]);
 
@@ -62,7 +67,7 @@ const ProductForm = ({ onSubmit, onClose, selectedProduct }) => {
       <div className="modal-dialog" role="document">
         <div className="modal-content">
           <div className="modal-header">
-            <h5 className="modal-title">Request Product</h5>
+            <h5 className="modal-title">Fill your details on browser</h5>
             <button type="button" className="close" onClick={onClose} aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -79,8 +84,8 @@ const ProductForm = ({ onSubmit, onClose, selectedProduct }) => {
                 <input type="tel" name="phone" value={formData.phone} onChange={handleChange} className="form-control" placeholder="Phone" required />
               </div>
               <div className="form-group">
+                <label htmlFor="requiredProduct">Interest in:</label>
                 <select name="requiredProduct" value={formData.requiredProduct} onChange={handleChange} className="form-control" required>
-                  <option value="">Select your Interest</option>
                   <option value="Bedroom">Bedroom</option>
                   <option value="Dining">Dining</option>
                   <option value="Upholstery">Upholstery</option>

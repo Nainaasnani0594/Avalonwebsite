@@ -24,76 +24,88 @@ function Upholstery() {
                     <Col xs={6}>
                         {/* Content for the first half */}
                         <Row>
-                            <Col xs={6} className="image-container">
+                            <Col xs={6} onClick={() => handleImageClick(one)}>
+                            <div className="image-container fixed-height">
                                 <LazyLoad height={200} offset={100}>
                                     <Image
                                         src={one}
                                         alt="Upholstery Furniture"
-                                        className="img-fluid"
-                                        onClick={() => handleImageClick(one)}
+                                        className="img-fluid fixed-image"
+                                        
                                     />
                                 </LazyLoad>
+                                </div>
                             </Col>
-                            <Col xs={6} className="image-container">
+                            <Col xs={6} onClick={() => handleImageClick(two)}>
+                            <div className="image-container fixed-height">
                                 <LazyLoad height={200} offset={100}>
                                     <Image
                                         src={two}
                                         alt="Upholstery Furniture"
-                                        className="img-fluid"
-                                        onClick={() => handleImageClick(two)}
+                                        className="img-fluid fixed-image"
+                                        
                                     />
                                 </LazyLoad>
+                                </div>
                             </Col>
                         </Row>
                         <Row>
-                            <Col xs={6} className="image-container">
+                            <Col xs={6} onClick={() => handleImageClick(three)}>
+                            <div className="image-container fixed-height">
                                 <LazyLoad height={200} offset={100}>
                                     <Image
                                         src={three}
                                         alt="Upholstery Furniture"
-                                        className="img-fluid"
-                                        onClick={() => handleImageClick(three)}
+                                        className="img-fluid fixed-image"
+                                        
                                     />
                                 </LazyLoad>
+                                </div>
                             </Col>
-                            <Col xs={6} className="image-container">
+                            <Col xs={6} onClick={() => handleImageClick(four)}>
+                            <div className="image-container fixed-height">
                                 <LazyLoad height={200} offset={100}>
                                     <Image
                                         src={four}
                                         alt="Upholstery Furniture"
-                                        className="img-fluid"
-                                        onClick={() => handleImageClick(four)}
+                                        className="img-fluid fixed-image"
+                                        
                                     />
                                 </LazyLoad>
+                                </div>
                             </Col>
                         </Row>
                         <Row>
-                            <Col xs={6} className="image-container">
+                            <Col xs={6} onClick={() => handleImageClick(five)}>
+                            <div className="image-container fixed-height">
                                 <LazyLoad height={200} offset={100}>
                                     <Image
                                         src={five}
                                         alt="Upholstery Furniture"
-                                        className="img-fluid"
-                                        onClick={() => handleImageClick(five)}
+                                        className="img-fluid fixed-image"
+                                        
                                     />
                                 </LazyLoad>
+                                </div>
                             </Col>
-                            <Col xs={6} className="image-container">
-                                <LazyLoad height={200} offset={100}>
+                            <Col xs={6} onClick={() => handleImageClick(six)}>
+                            <div className="image-container fixed-height">                                <LazyLoad height={200} offset={100}>
                                     <Image
                                         src={six}
                                         alt="Upholstery Furniture"
-                                        className="img-fluid"
-                                        onClick={() => handleImageClick(six)}
+                                        className="img-fluid fixed-image"
+                                        
                                     />
                                 </LazyLoad>
+                                </div>
+
                             </Col>
                         </Row>
                     </Col>
                     <Col xs={6}>
                         {/* Content for the second half */}
                         <Row>
-                            <Col xs={12} className="selected-image-col" style={{ marginTop: '2px' }}>
+                            <Col xs={12} className="selected-image-col" style={{ marginTop: '10px' }}>
                                 {/* Display the selected image */}
                                 {selectedImage && (
                                     <Image
@@ -105,8 +117,8 @@ function Upholstery() {
                             </Col>
                         </Row>
                         <Row className="small-text">
-                            <Col xs={12} style={{ fontSize: '13px', color: '#762a2b', marginTop: '35px' }}>
-                                <h3 style={{ color: "#E17126" }}>Upholstery</h3>
+                            <Col xs={12} style={{ fontSize: '13px', color: '#762a2b', marginTop: '3px',left: '50%', top: '20px' }}>
+                                <h3 style={{ color: "#E17126", marginTop: '6px' }}>Upholstery</h3>
                                 <p>Avalon Upholstery is Houston, Texas based upholstery manufacturer, designing and building upholstery for both residential and commercial market.</p>
                                 <p>Avalon Upholstery is part of the Dickson Furniture and Avalon Furniture family, taking pride in manufacturing high quality product at exceptional value.</p>
                                 <p>Avalon Upholstery is part of the Dickson Furniture and Avalon Furniture family, taking pride in manufacturing high quality product at exceptional value.</p>

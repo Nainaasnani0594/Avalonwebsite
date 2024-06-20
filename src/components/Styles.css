@@ -1,51 +1,70 @@
-/* Styles.css */
-
+/* Navbar styles */
 .navbar {
   background-color: #838280 !important;
 }
 
-.login-button {
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  color: #2e1919;
-  font-size: 20px;
-  margin-left: 20px; /* Adjust as needed for spacing */
-}
-
-.login-container {
-  display: flex;
-  justify-content: flex-end; /* Aligns items to the right side */
-  padding-right: 20px; /* Add some padding to space the button from the right edge */
-}
-
+/* Container styles */
 .container {
   margin-top: 20px;
 }
 
+.my-container {
+  background-color: white;
+  margin-top: -20px;
+  max-width: 976px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.image-container.fixed-height {
+  height: 170px;
+  overflow: hidden;
+  position: relative;
+}
+
+.img-fluid.fixed-image {
+  height: 100%;
+  width: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.my-container-about {
+  background-color: white;
+  max-width: 100%;
+  padding: 15px;
+}
+
+.mb-3 {
+  background: white;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* Image container styles */
 .image-container {
-  height: 150px; /* Adjust the height as needed */
-  overflow: hidden; /* Ensure that images don't overflow */
+  height: 200px;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.image-container .img-fluid {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* Ensures images cover the container while maintaining aspect ratio */
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 .img-fluid {
+  width: auto;
+  height: 100%;
+  object-fit: cover;
   max-width: 100%;
-  height: auto;
-  margin-top: 10px;
   margin-bottom: 5px;
 }
 
 .selected-image-col {
-  height: 270px; /* Set a fixed height for the selected image container */
+  height: 270px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -58,16 +77,26 @@
   object-fit: cover;
 }
 
-.mb-3 {
-  background: white;
-  max-width: 1000px;
-  margin: 0 auto;
+/* Text styles */
+.about-title {
+  color: #E17126;
+  margin-top: 0;
 }
 
-.carousel-item {
-  margin-top: 10px;
+.about-text, .small-text p {
+  color: #762A2B;
+  font-size: 14px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+  text-align: justify;
+  padding-right: 30px;
 }
 
+.small-text {
+  font-size: 12px;
+}
+
+/* Border styles */
 .one {
   margin-top: -15px;
 }
@@ -75,20 +104,12 @@
 .two {
   display: flex;
   align-items: stretch;
-  height: auto; /* Allow the height to adjust dynamically */
+  height: auto;
 }
 
 .three {
   border: 5px solid #e17126;
   background: white;
-}
-
-.my-container {
-  background-color: white;
-  margin-top: -20px;
-  max-width: 976px;
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 
 .four {
@@ -103,75 +124,7 @@
   margin: auto;
 }
 
-.my-container-about {
-    background-color: white;
-    max-width: 100%;
-    padding: 15px;
-}
-
-.image-container {
-    height: 150px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
-}
-
-.image-container .img-fluid {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.selected-image-container {
-    height: 300px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.selected-image {
-    /* width: auto; */
-    height: 100%;
-    object-fit: cover;
-}
-
-.about-title {
-    color: #E17126;
-    margin-top: 0;
-}
-
-.about-text {
-    color: #762A2B;
-    font-size: 14px;
-    line-height: 1.5;
-    margin-bottom: 10px;
-}
-
-/* Media queries for responsiveness */
-
-@media (max-width: 767px) {
-    .image-container {
-        height: 120px;
-    }
-    .selected-image-container {
-        height: 240px;
-    }
-    .about-text {
-        font-size: 12px;
-    }
-}
-/* Styles.css */
-.small-text p {
-  padding-right: 30px;
-  text-align: justify;
-  font-size: 12px; 
-  line-height: 1; 
-}
-
+/* Modal styles */
 .modal {
   display: flex;
   align-items: center;
@@ -216,14 +169,32 @@
   font-size: 25px;
   color: #080606;
 }
-.carousel slide{
-  height: 500px;
-}
-.w-100{
-  height: 279px;
+
+.carousel-item {
+  margin-top: 10px;
 }
 
-/* For medium screens (768px - 992px) */
+.carousel-slide {
+  height: 500px;
+}
+
+.w-100 {
+  height: 280px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 767px) {
+  .image-container {
+    height: 120px;
+  }
+  .selected-image-col {
+    height: 240px;
+  }
+  .about-text, .small-text p {
+    font-size: 12px;
+  }
+}
+
 @media (min-width: 768px) and (max-width: 992px) {
   .my-container-about {
     max-width: 768px;
@@ -236,7 +207,6 @@
   }
 }
 
-/* For small screens (576px - 768px) */
 @media (min-width: 576px) and (max-width: 768px) {
   .my-container-about {
     max-width: 576px;
@@ -251,7 +221,6 @@
   }
 }
 
-/* For extra small screens (less than 576px) */
 @media (max-width: 576px) {
   .my-container-about {
     max-width: 100%;
