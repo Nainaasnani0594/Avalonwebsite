@@ -82,18 +82,18 @@ function Bedroom() {
                         </Row>
                         <Row className="small-text">
                             <Col xs={12} style={{
-                                fontSize: '13px',
+                                fontSize: '11px',
                                 color: '#762a2b',
                                 marginTop: '1px',
                                 left: '50%',
                                 top: '20px',
                             }}>
                                 <h3 style={{ color: "#E17126" }}>Bedroom</h3>
-                                <p style={{marginTop: '-3px'}}>Our master bedroom line has exciting style, innovation, features and function. The impressive scale and focus on detail
+                                <p style={{marginTop: '-4px', fontSize: '12px'}}>Our master bedroom line has exciting style, innovation, features and function. The impressive scale and focus on detail
                                     is what distinguishes the Avalon bedroom design. Quality materials and craftsmanship, along with natural, and clear,
                                     yet distinctive color and finish, provide a canvas for the many curves and lines of our storage pieces and beds.
                                 </p>
-                                <p>Whether it is the elegant look of quarter – sawn Ash, or brushed finishes on Cherry, Ash and Acacia. The beautiful
+                                <p style={{marginTop: '-4px',fontSize: '12px'}}>Whether it is the elegant look of quarter – sawn Ash, or brushed finishes on Cherry, Ash and Acacia. The beautiful
                                     clarity our master bedrooms delivers on your highest aspirations. Loaded with high end features typically found in
                                     much more expensive goods. Most collections offer 5-piece, dovetailed drawers that are sanded, stained to match and
                                     sealed. Velvet lined with jewelry trays and bonus drawers in most collections. Cedar lined bottom drawers for storage

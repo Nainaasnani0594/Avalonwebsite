@@ -25,76 +25,76 @@ function Upholstery() {
                         {/* Content for the first half */}
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(one)}>
-                            <div className="image-container fixed-height">
-                                <LazyLoad height={200} offset={100}>
-                                    <Image
-                                        src={one}
-                                        alt="Upholstery Furniture"
-                                        className="img-fluid fixed-image"
-                                        
-                                    />
-                                </LazyLoad>
+                                <div className="image-container fixed-height">
+                                    <LazyLoad height={200} offset={100}>
+                                        <Image
+                                            src={one}
+                                            alt="Upholstery Furniture"
+                                            className="img-fluid fixed-image"
+
+                                        />
+                                    </LazyLoad>
                                 </div>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(two)}>
-                            <div className="image-container fixed-height">
-                                <LazyLoad height={200} offset={100}>
-                                    <Image
-                                        src={two}
-                                        alt="Upholstery Furniture"
-                                        className="img-fluid fixed-image"
-                                        
-                                    />
-                                </LazyLoad>
+                                <div className="image-container fixed-height">
+                                    <LazyLoad height={200} offset={100}>
+                                        <Image
+                                            src={two}
+                                            alt="Upholstery Furniture"
+                                            className="img-fluid fixed-image"
+
+                                        />
+                                    </LazyLoad>
                                 </div>
                             </Col>
                         </Row>
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(three)}>
-                            <div className="image-container fixed-height">
-                                <LazyLoad height={200} offset={100}>
-                                    <Image
-                                        src={three}
-                                        alt="Upholstery Furniture"
-                                        className="img-fluid fixed-image"
-                                        
-                                    />
-                                </LazyLoad>
+                                <div className="image-container fixed-height">
+                                    <LazyLoad height={200} offset={100}>
+                                        <Image
+                                            src={three}
+                                            alt="Upholstery Furniture"
+                                            className="img-fluid fixed-image"
+
+                                        />
+                                    </LazyLoad>
                                 </div>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(four)}>
-                            <div className="image-container fixed-height">
-                                <LazyLoad height={200} offset={100}>
-                                    <Image
-                                        src={four}
-                                        alt="Upholstery Furniture"
-                                        className="img-fluid fixed-image"
-                                        
-                                    />
-                                </LazyLoad>
+                                <div className="image-container fixed-height">
+                                    <LazyLoad height={200} offset={100}>
+                                        <Image
+                                            src={four}
+                                            alt="Upholstery Furniture"
+                                            className="img-fluid fixed-image"
+
+                                        />
+                                    </LazyLoad>
                                 </div>
                             </Col>
                         </Row>
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(five)}>
-                            <div className="image-container fixed-height">
-                                <LazyLoad height={200} offset={100}>
-                                    <Image
-                                        src={five}
-                                        alt="Upholstery Furniture"
-                                        className="img-fluid fixed-image"
-                                        
-                                    />
-                                </LazyLoad>
+                                <div className="image-container fixed-height">
+                                    <LazyLoad height={200} offset={100}>
+                                        <Image
+                                            src={five}
+                                            alt="Upholstery Furniture"
+                                            className="img-fluid fixed-image"
+
+                                        />
+                                    </LazyLoad>
                                 </div>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(six)}>
-                            <div className="image-container fixed-height">                                <LazyLoad height={200} offset={100}>
+                                <div className="image-container fixed-height">                                <LazyLoad height={200} offset={100}>
                                     <Image
                                         src={six}
                                         alt="Upholstery Furniture"
                                         className="img-fluid fixed-image"
-                                        
+
                                     />
                                 </LazyLoad>
                                 </div>
@@ -117,11 +117,14 @@ function Upholstery() {
                             </Col>
                         </Row>
                         <Row className="small-text">
-                            <Col xs={12} style={{ fontSize: '13px', color: '#762a2b', marginTop: '3px',left: '50%', top: '20px' }}>
+                            <Col xs={12} style={{ fontSize: '13px', color: '#762a2b', marginTop: '3px', left: '50%', top: '20px' }}>
                                 <h3 style={{ color: "#E17126", marginTop: '6px' }}>Upholstery</h3>
-                                <p>Avalon Upholstery is Houston, Texas based upholstery manufacturer, designing and building upholstery for both residential and commercial market.</p>
-                                <p>Avalon Upholstery is part of the Dickson Furniture and Avalon Furniture family, taking pride in manufacturing high quality product at exceptional value.</p>
-                                <p>Avalon Upholstery is part of the Dickson Furniture and Avalon Furniture family, taking pride in manufacturing high quality product at exceptional value.</p>
+                                <p style={{ color: "#762A2B",fontSize: '13px' }}>Proudly bench made in Texas with more than 15 different styles of sectionals, sofa – loves, chairs
+                                    and chaises. Deep plush seating abounds throughout the collections of oversized, comfortable
+                                    models covered in rich serviceable chenille, woven and damask fabrics. Frames constructed of
+                                    select hardwoods, plywoods and furniture board. All frames use sinuous spring system for
+                                    optimum ride and comfort. Incorporating our 1.8 pound density or dual density cushions wrapped
+                                    in fiber for a down like feel…</p>
                             </Col>
                         </Row>
                     </Col>
