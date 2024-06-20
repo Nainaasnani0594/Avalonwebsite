@@ -145,7 +145,7 @@
 
 .modal-content {
   position: relative;
-  background-color: aliceblue;
+  background-color: #FCFCFC;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -163,7 +163,7 @@
 }
 
 .close {
-  background: #F0F8FF;
+  background: #FCFCFC;
   border: none;
   cursor: pointer;
   font-size: 25px;
