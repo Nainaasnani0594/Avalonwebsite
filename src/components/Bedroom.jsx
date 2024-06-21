@@ -25,9 +25,9 @@ function Bedroom() {
                         {/* Content for the first half */}
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(one)}>
-                                <div className="image-container fixed-height">
+                                <div className="image-container fixed-height" >
                                     <LazyLoad height={200} offset={100}>
-                                        <Image src={one} alt="Bedroom Furniture" className="img-fluid fixed-image" />
+                                        <Image src={one} alt="Bedroom Furniture" className="img-fluid fixed-image"  />
                                     </LazyLoad>
                                 </div>
                             </Col>
@@ -89,21 +89,21 @@ function Bedroom() {
                                 top: '20px',
                             }}>
                                 <h3 style={{ color: "#E17126" }}>Bedroom</h3>
-                                <p style={{marginTop: '-4px', fontSize: '12px'}}>Our master bedroom line has exciting style, innovation, features and function. The impressive scale and focus on detail
+                                <p style={{ marginTop: '-4px', fontSize: '12px' }}>Our master bedroom line has exciting style, innovation, features and function. The impressive scale and focus on detail
                                     is what distinguishes the Avalon bedroom design. Quality materials and craftsmanship, along with natural, and clear,
                                     yet distinctive color and finish, provide a canvas for the many curves and lines of our storage pieces and beds.
                                 </p>
-                                <p style={{marginTop: '-4px',fontSize: '12px'}}>Whether it is the elegant look of quarter – sawn Ash, or brushed finishes on Cherry, Ash and Acacia. The beautiful
+                                <p style={{ marginTop: '-4px', fontSize: '12px' }}>Whether it is the elegant look of quarter – sawn Ash, or brushed finishes on Cherry, Ash and Acacia. The beautiful
                                     clarity our master bedrooms delivers on your highest aspirations. Loaded with high end features typically found in
                                     much more expensive goods. Most collections offer 5-piece, dovetailed drawers that are sanded, stained to match and
                                     sealed. Velvet lined with jewelry trays and bonus drawers in most collections. Cedar lined bottom drawers for storage
                                     of seasonal items. Some of our more popular sets also feature solid wood edges around each case for extra strength
                                     and durability.</p>
-                                {/* <p>Our nightstands offer power charging for your devices atop your nightstand. Wireless rapid charging and two USB
+                                <p style={{ marginTop: '-4px', fontSize: '12px' }}>Our nightstands offer power charging for your devices atop your nightstand. Wireless rapid charging and two USB
                                     ports mounted on the back of each nightstand to charge additional devices. Some models have a low voltage, cool to
                                     the touch LED night light that illuminates your late-night pathway to safely reach your destination without stepping on
                                     pets or toys on your way. Coming soon is our new “Tech - stand” that features charging of your phone, air pods tm and
-                                    watch simultaneously and safely.</p> */}
+                                    watch simultaneously and safely.</p>
                             </Col>
                         </Row>
                     </Col>
@@ -112,7 +112,7 @@ function Bedroom() {
 
             <Container className="my-container-about">
                 <Row className="mb-3 my-row">
-                    <div className='three'style={{marginTop:'12px'}}></div>
+                    <div className='three' style={{ marginTop: '12px' }}></div>
                 </Row>
             </Container>
             <Container className="my-container-about">
