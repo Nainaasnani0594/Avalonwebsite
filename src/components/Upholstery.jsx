@@ -31,6 +31,7 @@ function Upholstery() {
                                             src={one}
                                             alt="Upholstery Furniture"
                                             className="img-fluid fixed-image"
+                                            style={{width:'234px'}}
 
                                         />
                                     </LazyLoad>
@@ -43,6 +44,7 @@ function Upholstery() {
                                             src={two}
                                             alt="Upholstery Furniture"
                                             className="img-fluid fixed-image"
+                                            style={{width:'234px'}}
 
                                         />
                                     </LazyLoad>
@@ -57,6 +59,7 @@ function Upholstery() {
                                             src={three}
                                             alt="Upholstery Furniture"
                                             className="img-fluid fixed-image"
+                                            style={{width:'234px'}}
 
                                         />
                                     </LazyLoad>
@@ -69,6 +72,7 @@ function Upholstery() {
                                             src={four}
                                             alt="Upholstery Furniture"
                                             className="img-fluid fixed-image"
+                                            style={{width:'234px'}}
 
                                         />
                                     </LazyLoad>
@@ -83,17 +87,20 @@ function Upholstery() {
                                             src={five}
                                             alt="Upholstery Furniture"
                                             className="img-fluid fixed-image"
+                                            style={{width:'234px'}}
 
                                         />
                                     </LazyLoad>
                                 </div>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(six)}>
-                                <div className="image-container fixed-height">                                <LazyLoad height={200} offset={100}>
+                                <div className="image-container fixed-height">                               
+                                     <LazyLoad height={200} offset={100}>
                                     <Image
                                         src={six}
                                         alt="Upholstery Furniture"
                                         className="img-fluid fixed-image"
+                                        style={{width:'234px'}}
 
                                     />
                                 </LazyLoad>

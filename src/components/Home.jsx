@@ -23,7 +23,7 @@ function Home() {
                   src={slide}
                   alt="Bedroom Furniture"
                   className="img-fluid"
-                  style={{ width: '100%', height: '170px' }}
+                  style={{ width: '100%', height: '205px' }}
                 />
               </Col>
             </Row>
