@@ -243,4 +243,10 @@
   .my-container .four{
     margin-top: -80px;
   }
+  .w-100{
+    margin: auto;
+  }
+  .mt-3 .flex-grow-1{
+    margin-bottom: 5px;
+  }
   }
