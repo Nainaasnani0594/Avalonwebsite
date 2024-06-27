@@ -91,10 +91,10 @@ function AboutUs() {
                                 top: '20px',
                             }}>
                                 <h3 style={{ color: "#E17126", marginTop: '6px' }}>About Us</h3>
-                                <p style={{ color: "#762A2B" }}>Avalon Furniture, an American-owned furniture supplier based in Houston, Texas has enjoyed a rich
+                                <p style={{ color: "#762A2B",fontSize: '12px' }}>Avalon Furniture, an American-owned furniture supplier based in Houston, Texas has enjoyed a rich
                                     heritage in furniture design and development for decades. We take pride in sophisticated design innovation,
                                     elegant wood finishes, product quality, and on delivering exceptional value in our price category.</p>
-                                <p style={{ color: "#762A2B" }}>With a range of product categories from on-trend Transitional, to Modern Farmhouse, Modern, Rustic and
+                                <p style={{ color: "#762A2B",fontSize: '12px' }}>With a range of product categories from on-trend Transitional, to Modern Farmhouse, Modern, Rustic and
                                     Glam. Avalon Furniture brings you the latest in fashion-forward designs with exquisite finishing. Our
                                     products offer appeal and excitement across a broad range of discerning consumers with an eye and
                                     appreciation for design and craftsmanship.</p>
