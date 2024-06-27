@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import LazyLoad from 'react-lazyload';
 import one from '../images/home/B961.jpeg';
@@ -13,6 +13,7 @@ import './Styles.css';
 function Bedroom() {
     const [selectedImage, setSelectedImage] = useState(seven);
     const [showFullText, setShowFullText] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     const handleImageClick = (imageSrc) => {
         setSelectedImage(imageSrc);
@@ -21,6 +22,15 @@ function Bedroom() {
     const toggleText = () => {
         setShowFullText(!showFullText);
     };
+
+    const updateMedia = () => {
+        setIsMobile(window.innerWidth <= 768);
+    };
+
+    useEffect(() => {
+        window.addEventListener('resize', updateMedia);
+        return () => window.removeEventListener('resize', updateMedia);
+    }, []);
 
     return (
         <>
@@ -95,21 +105,20 @@ function Bedroom() {
                                     is what distinguishes the Avalon bedroom design. Quality materials and craftsmanship, along with natural, and clear,
                                     yet distinctive color and finish, provide a canvas for the many curves and lines of our storage pieces and beds.
                                 </p>
-                                <p style={{ marginTop: '-4px', fontSize: '12px' }}>Whether it is the elegant look of quarter – sawn Ash, or brushed finishes on Cherry, Ash and Acacia. The beautiful
-                                    clarity our master bedrooms delivers on your highest aspirations. Loaded with high end features typically found in
-                                    much more expensive goods. Most collections offer 5-piece, dovetailed drawers that are sanded, stained to match and
-                                    sealed. Velvet lined with jewelry trays and bonus drawers in most collections. Cedar lined bottom drawers for storage
-                                    of seasonal items. Some of our more popular sets also feature solid wood edges around each case for extra strength
-                                    and durability.</p>
-                                {!showFullText && (
-                                    <button onClick={toggleText} style={{color: '#E17126', border: 'none', padding: '5px 10px', cursor: 'pointer',fontSize:'13px' }}>Read More</button>
+                                {(!isMobile || showFullText) && (
+                                    <p style={{ marginTop: '-4px', fontSize: '12px' }}>Whether it is the elegant look of quarter – sawn Ash, or brushed finishes on Cherry, Ash and Acacia. The beautiful
+                                        clarity our master bedrooms delivers on your highest aspirations. Loaded with high end features typically found in
+                                        much more expensive goods. Most collections offer 5-piece, dovetailed drawers that are sanded, stained to match and
+                                        sealed. Velvet lined with jewelry trays and bonus drawers in most collections. Cedar lined bottom drawers for storage
+                                        of seasonal items. Some of our more popular sets also feature solid wood edges around each case for extra strength
+                                        and durability.</p>
                                 )}
                                 {showFullText && (
-                                    <>
-                                        <p style={{ marginTop: '-4px', fontSize: '12px' }}>Our nightstands offer power charging for your devices atop your nightstand. Wireless rapid charging and two USB ports mounted on the back of each nightstand to charge additional devices. Some models have a low voltage, cool to the touch LED night light that illuminates your late-night pathway to safely reach your destination without stepping on pets or toys on your way. Coming soon is our new “Tech - stand” &#8482; that features charging of your phone, air pods and watch simultaneously and safely.</p>
-                                        <button onClick={toggleText} style={{ color: '#E17126', border: 'none', padding: '5px 10px', cursor: 'pointer' }}>Read Less</button>
-                                    </>
+                                    <p style={{ marginTop: '-4px', fontSize: '12px' }}>Our nightstands offer power charging for your devices atop your nightstand. Wireless rapid charging and two USB ports mounted on the back of each nightstand to charge additional devices. Some models have a low voltage, cool to the touch LED night light that illuminates your late-night pathway to safely reach your destination without stepping on pets or toys on your way. Coming soon is our new “Tech - stand” &#8482; that features charging of your phone, air pods and watch simultaneously and safely.</p>
                                 )}
+                                <button onClick={toggleText} style={{ color: '#E17126', border: 'none', padding: '5px 10px', cursor: 'pointer', fontSize:'13px' }}>
+                                    {showFullText ? 'Read Less' : 'Read More'}
+                                </button>
                             </Col>
                         </Row>
                     </Col>

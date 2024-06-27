@@ -235,18 +235,33 @@
     height: auto; /* Let height adjust automatically */
     margin-top: -10px;
   }
-}@media screen and (min-width: 300px) and (max-width: 768px) { 
-  .four .col-6{
-    width: 100%;
-    
+}
+@media screen and (min-width: 300px) and (max-width: 768px) { 
+  .four .col-6 {
+      width: 100%;
   }
-  .my-container .four{
-    margin-top: -80px;
+
+  .my-container .four {
+      margin-top: -80px;
   }
-  .w-100{
-    margin: auto;
+
+  .w-100 {
+      margin: auto;
   }
-  .mt-3 .flex-grow-1{
-    margin-bottom: 5px;
+
+  .mt-3 .flex-grow-1 {
+      margin-bottom: 5px;
   }
+
+  .small-text p {
+      display: block;
   }
+
+  .small-text p:first-of-type {
+      display: block;
+  }
+
+  .small-text.show-full p {
+      display: block;
+  }
+}
