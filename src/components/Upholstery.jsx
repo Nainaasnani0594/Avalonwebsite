@@ -131,7 +131,7 @@ function Upholstery() {
                                     models covered in rich serviceable chenille, woven and damask fabrics. Frames constructed of
                                     select hardwoods, plywoods and furniture board. All frames use sinuous spring system for
                                     optimum ride and comfort. Incorporating our 1.8 pound density or dual density cushions wrapped
-                                    in fiber for a down like feel…</p>
+                                    in fiber for a down like feel.</p>
                             </Col>
                         </Row>
                     </Col>

@@ -114,7 +114,7 @@ function Bedroom() {
                                         and durability.</p>
                                 )}
                                 {showFullText && (
-                                    <p style={{ marginTop: '-4px', fontSize: '12px' }}>Our nightstands offer power charging for your devices atop your nightstand. Wireless rapid charging and two USB ports mounted on the back of each nightstand to charge additional devices. Some models have a low voltage, cool to the touch LED night light that illuminates your late-night pathway to safely reach your destination without stepping on pets or toys on your way. Coming soon is our new “Tech - stand” &#8482; that features charging of your phone, air pods and watch simultaneously and safely.</p>
+                                    <p style={{ marginTop: '-4px', fontSize: '12px' }}>Our nightstands offer power charging for your devices atop your nightstand. Wireless rapid charging and two USB ports mounted on the back of each nightstand to charge additional devices. Some models have a low voltage, cool to the touch LED night light that illuminates your late-night pathway to safely reach your destination without stepping on pets or toys on your way. Coming soon is our new TECH STAND &#8482; that features charging of your phone, air pods and watch simultaneously and safely.</p>
                                 )}
                                 <button onClick={toggleText} style={{ color: '#E17126', border: 'none', padding: '5px 10px', cursor: 'pointer', fontSize:'13px' }}>
                                     {showFullText ? 'Read Less' : 'Read More'}
