@@ -7,7 +7,7 @@ import three from '../images/home/U6020.png';
 import four from '../images/home/U3090.jpeg';
 import five from '../images/home/U1280.jpeg';
 import six from '../images/home/U3075.jpeg';
-import seven from '../images/home/U6080.jpeg';
+import seven from '../images/home/new.jpg';
 import './Styles.css'; // Import custom CSS
 
 function Upholstery() {

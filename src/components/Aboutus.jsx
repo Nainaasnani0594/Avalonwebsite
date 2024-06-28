@@ -12,9 +12,18 @@ import './Styles.css'; // Import custom CSS
 
 function AboutUs() {
     const [selectedImage, setSelectedImage] = useState(seven); // Initialize with seven image
+    const [showFullText, setShowFullText] = useState(false);
+    const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
     const handleImageClick = (imageSrc) => {
         setSelectedImage(imageSrc);
+    };
+    const toggleText = () => {
+        setShowFullText(!showFullText);
+    };
+
+    const updateMedia = () => {
+        setIsMobile(window.innerWidth <= 768);
     };
 
     return (
@@ -94,10 +103,12 @@ function AboutUs() {
                                 <p style={{ color: "#762A2B",fontSize: '12px' }}>Avalon Furniture, an American-owned furniture supplier based in Houston, Texas has enjoyed a rich
                                     heritage in furniture design and development for decades. We take pride in sophisticated design innovation,
                                     elegant wood finishes, product quality, and on delivering exceptional value in our price category.</p>
+                                    {(!isMobile || showFullText) && (
                                 <p style={{ color: "#762A2B",fontSize: '12px' }}>With a range of product categories from on-trend Transitional, to Modern Farmhouse, Modern, Rustic and
                                     Glam. Avalon Furniture brings you the latest in fashion-forward designs with exquisite finishing. Our
                                     products offer appeal and excitement across a broad range of discerning consumers with an eye and
                                     appreciation for design and craftsmanship.</p>
+                            )}
                             </Col>
                         </Row>
                     </Col>

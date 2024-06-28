@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
 import LazyLoad from 'react-lazyload';
-import one from '../images/home/B961.jpeg';
+import one from '../images/home/B9611.jpeg';
 import two from '../images/home/B1495.jpeg';
 import three from '../images/home/B1209.jpeg';
-import four from '../images/home/B226.jpeg';
-import five from '../images/home/B193.jpeg';
+import four from '../images/home/B2261.jpeg';
+import five from '../images/home/B1931.jpeg';
 import six from '../images/home/B566.jpeg';
-import seven from '../images/home/B1623.jpeg';
+import seven from '../images/home/B16231.jpeg';
 import './Styles.css';
 
 function Bedroom() {
