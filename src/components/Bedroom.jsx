@@ -1,13 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
-import LazyLoad from 'react-lazyload';
-import one from '../images/home/B9611.jpeg';
-import two from '../images/home/B1495.jpeg';
-import three from '../images/home/B1209.jpeg';
-import four from '../images/home/B2261.jpeg';
-import five from '../images/home/B1931.jpeg';
-import six from '../images/home/B566.jpeg';
-import seven from '../images/home/B16231.jpeg';
+import one from '../images/bedroom/B961.jpg';
+import two from '../images/bedroom/B1495.jpg';
+import three from '../images/bedroom/B1209.jpg';
+import four from '../images/bedroom/B226.jpg';
+import five from '../images/bedroom/B193.jpg';
+import six from '../images/bedroom/B566.jpg';
+import seven from '../images/bedroom/B1623.jpg';
 import './Styles.css';
 
 function Bedroom() {
@@ -39,49 +38,37 @@ function Bedroom() {
                     <Col xs={6}>
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(one)}>
-                                <div className="image-container fixed-height">
-                                    <LazyLoad height={200} offset={100}>
+                                <div loading="lazy" className="image-container fixed-height">
                                         <Image src={one} alt="Bedroom Furniture" className="img-fluid fixed-image" />
-                                    </LazyLoad>
                                 </div>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(two)}>
-                                <div className="image-container fixed-height">
-                                    <LazyLoad height={200} offset={100}>
+                                <div loading="lazy" className="image-container fixed-height">
                                         <Image src={two} alt="Bedroom Furniture" className="img-fluid fixed-image" />
-                                    </LazyLoad>
                                 </div>
                             </Col>
                         </Row>
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(three)}>
-                                <div className="image-container fixed-height">
-                                    <LazyLoad height={200} offset={100}>
+                                <div loading="lazy" className="image-container fixed-height">
                                         <Image src={three} alt="Bedroom Furniture" className="img-fluid fixed-image" />
-                                    </LazyLoad>
                                 </div>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(four)}>
-                                <div className="image-container fixed-height">
-                                    <LazyLoad height={200} offset={100}>
+                                <div loading="lazy" className="image-container fixed-height">
                                         <Image src={four} alt="Bedroom Furniture" className="img-fluid fixed-image" />
-                                    </LazyLoad>
                                 </div>
                             </Col>
                         </Row>
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(five)}>
-                                <div className="image-container fixed-height">
-                                    <LazyLoad height={200} offset={100}>
+                                <div loading="lazy" className="image-container fixed-height">
                                         <Image src={five} alt="Bedroom Furniture" className="img-fluid fixed-image" />
-                                    </LazyLoad>
                                 </div>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(six)}>
-                                <div className="image-container fixed-height">
-                                    <LazyLoad height={200} offset={100}>
+                                <div loading="lazy" className="image-container fixed-height">
                                         <Image src={six} alt="Bedroom Furniture" className="img-fluid fixed-image" />
-                                    </LazyLoad>
                                 </div>
                             </Col>
                         </Row>

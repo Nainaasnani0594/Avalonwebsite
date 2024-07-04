@@ -23,6 +23,7 @@ function Home() {
                   src={slide}
                   alt="Bedroom Furniture"
                   className="img-fluid"
+                  loading="lazy"
                   style={{ width: '100%', height: '205px' }}
                 />
               </Col>
@@ -33,6 +34,7 @@ function Home() {
                   src={slide1}
                   alt="Bedroom Furniture"
                   className="img-fluid"
+                  loading="lazy"
                   style={{ width: '100%' }}
                 />
               </Col>
@@ -41,6 +43,7 @@ function Home() {
                   src={slide2}
                   alt="Bedroom Furniture"
                   className="img-fluid"
+                  loading="lazy"
                   style={{ width: '100%' }}
                 />
               </Col>
@@ -52,6 +55,7 @@ function Home() {
                 <Image
                   src={slide3}
                   alt="Bedroom Furniture"
+                  loading="lazy"
                   className="d-block w-100"
                 />
               </Carousel.Item>
@@ -59,6 +63,7 @@ function Home() {
                 <Image
                   src={slide4}
                   alt="Bedroom Furniture"
+                  loading="lazy"
                   className="d-block w-100"
                 />
               </Carousel.Item>
@@ -66,6 +71,7 @@ function Home() {
                 <Image
                   src={slide5}
                   alt="Bedroom Furniture"
+                  loading="lazy"
                   className="d-block w-100"
                 />
               </Carousel.Item>
@@ -73,6 +79,7 @@ function Home() {
                 <Image
                   src={slide6}
                   alt="Bedroom Furniture"
+                  loading="lazy"
                   className="d-block w-100"
                 />
               </Carousel.Item>

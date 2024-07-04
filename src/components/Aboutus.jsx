@@ -34,49 +34,37 @@ function AboutUs() {
                         {/* Content for the first half */}
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(one)}>
-                                <div className="image-container fixed-height">
-                                    <LazyLoad height={200} offset={100}>
+                                <div loading="lazy" className="image-container fixed-height">
                                         <Image src={one} alt="About Us" className="img-fluid fixed-image" />
-                                    </LazyLoad>
                                 </div>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(two)}>
-                                <div className="image-container fixed-height">
-                                    <LazyLoad height={200} offset={100}>
+                                <div loading="lazy" className="image-container fixed-height">
                                         <Image src={two} alt="About Us" className="img-fluid fixed-image" />
-                                    </LazyLoad>
                                 </div>
                             </Col>
                         </Row>
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(three)}>
-                                <div className="image-container fixed-height">
-                                    <LazyLoad height={200} offset={100}>
+                                <div loading="lazy" className="image-container fixed-height">
                                         <Image src={three} alt="About Us" className="img-fluid fixed-image" />
-                                    </LazyLoad>
                                 </div>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(four)}>
-                                <div className="image-container fixed-height">
-                                    <LazyLoad height={200} offset={100}>
+                                <div loading="lazy" className="image-container fixed-height">
                                         <Image src={four} alt="About Us" className="img-fluid fixed-image" />
-                                    </LazyLoad>
                                 </div>
                             </Col>
                         </Row>
                         <Row>
                             <Col xs={6} onClick={() => handleImageClick(five)}>
-                                <div className="image-container fixed-height">
-                                    <LazyLoad height={200} offset={100}>
+                                <div loading="lazy" className="image-container fixed-height">
                                         <Image src={five} alt="About Us" className="img-fluid fixed-image" />
-                                    </LazyLoad>
                                 </div>
                             </Col>
                             <Col xs={6} onClick={() => handleImageClick(six)}>
-                                <div className="image-container fixed-height">
-                                    <LazyLoad height={200} offset={100}>
+                                <div loading="lazy" className="image-container fixed-height">
                                         <Image src={six} alt="About Us" className="img-fluid fixed-image" />
-                                    </LazyLoad>
                                 </div>
                             </Col>
                         </Row>
