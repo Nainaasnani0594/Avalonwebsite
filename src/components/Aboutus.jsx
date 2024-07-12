@@ -6,7 +6,7 @@ import two from '../images/home/B2404.jpeg';
 import three from '../images/home/B362.jpeg';
 import four from '../images/home/D253.jpeg';
 import five from '../images/home/D162.jpeg';
-import six from '../images/home/B1550.jpeg';
+import six from '../images/bedroom/B1550.jpg';
 import seven from '../images/home/B518.jpeg';
 import './Styles.css'; // Import custom CSS
 
